@@ -1,0 +1,10 @@
+{
+  "name": "fare-site-api",
+  "version": "1.0.0",
+  "description": "FAR.E Group — site contact API (Azure Static Web Apps managed Functions)",
+  "main": "contact/index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true
+}
