@@ -23,7 +23,7 @@
     "Referrer-Policy": "strict-origin-when-cross-origin",
     "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
     "Permissions-Policy": "geolocation=(), microphone=(), camera=(), payment=(), usb=()",
-    "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' https://embeds.iubenda.com https://cdn.iubenda.com https://www.iubenda.com https://cs.iubenda.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://cdn.iubenda.com https://www.iubenda.com; connect-src 'self' https://www.iubenda.com https://embeds.iubenda.com https://cs.iubenda.com; frame-src https://www.iubenda.com; form-action 'self'; base-uri 'self'; frame-ancestors 'none'; object-src 'none'",
+    "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' https://embeds.iubenda.com https://cdn.iubenda.com https://www.iubenda.com https://cs.iubenda.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://cdn.iubenda.com https://www.iubenda.com; connect-src 'self' https://www.iubenda.com https://embeds.iubenda.com https://cs.iubenda.com https://cpl.iubenda.com https://idb.iubenda.com; frame-src https://www.iubenda.com; form-action 'self'; base-uri 'self'; frame-ancestors 'none'; object-src 'none'",
     "Cache-Control": "public, max-age=3600"
   },
   "mimeTypes": {
