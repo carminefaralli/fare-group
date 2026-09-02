@@ -1,33 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-<script type="text/javascript">
-var _iub = _iub || [];
-_iub.csConfiguration = {"askConsentAtCookiePolicyUpdate":true,"countryDetection":true,"emailMarketing":{"theme":"dark"},"enableFadp":true,"enableLgpd":true,"enableUspr":true,"floatingPreferencesButtonDisplay":"bottom-right","lgpdAppliesGlobally":false,"perPurposeConsent":true,"siteId":4479672,"storage":{"useSiteId":true},"whitelabel":false,"cookiePolicyId":86666832,"banner":{"acceptButtonDisplay":true,"closeButtonDisplay":false,"customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"ownerName":"www.fare-group.com","position":"float-top-center","rejectButtonDisplay":true,"showTitle":false,"showTotalNumberOfProviders":true}};
-_iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicyId":25793588},"en-GB":{"cookiePolicyId":25793588}};
-</script>
-<script type="text/javascript" src="https://cs.iubenda.com/autoblocking/4479672.js"></script>
-<script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
-<script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FAR.E. Group — Redirecting...</title>
-<script>
-  (function() {
-    var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-    if (lang.startsWith('it')) {
-      window.location.replace('/it/');
-    } else {
-      window.location.replace('/en/');
-    }
-  })();
-</script>
+<meta name="robots" content="noindex">
+<title>FAR.E. Group</title>
+<!-- Fallback shell: la root e' redirettata server-side a /it/ da staticwebapp.config.json
+     (route "/" -> 302 /it/). Questa pagina viene servita solo se la config SWA
+     non e' applicata (es. anteprima locale). Comportamento allineato al redirect server. -->
+<script>window.location.replace('/it/');</script>
 <noscript>
-  <meta http-equiv="refresh" content="0; url=/en/">
+  <meta http-equiv="refresh" content="0; url=/it/">
 </noscript>
 </head>
 <body>
-  <p>Redirecting... / Reindirizzamento in corso...</p>
+  <p>Reindirizzamento in corso... / Redirecting...</p>
   <p><a href="/it/">Italiano</a> | <a href="/en/">English</a></p>
 </body>
 </html>

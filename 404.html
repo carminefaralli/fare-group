@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>404 — Page not found | FAR.E. Group</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1C2B3A;
+    --green: #5A9E6F;
+    --text: #1E2330;
+    --text-light: #6B7A8E;
+    --bg: #F3F5F8;
+    --white: #FFFFFF;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    background: var(--white);
+    max-width: 560px;
+    width: 100%;
+    padding: 48px 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 16px rgba(28, 43, 58, 0.08);
+    text-align: center;
+  }
+  .card img { max-width: 150px; height: auto; margin: 0 auto 32px; display: block; }
+  .code {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 64px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+  p { font-size: 15px; color: var(--text-light); margin-bottom: 4px; }
+  .links { margin-top: 28px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .links a {
+    display: inline-block;
+    padding: 10px 24px;
+    background: var(--navy);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+  .links a:hover { background: var(--green); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <img src="/assets/img/logo-color.png" alt="FAR.E. Group" width="845" height="379">
+    <div class="code">404</div>
+    <h1>Page not found / Pagina non trovata</h1>
+    <p>The page you are looking for does not exist or has been moved.</p>
+    <p>La pagina che cerchi non esiste o &egrave; stata spostata.</p>
+    <div class="links">
+      <a href="/it/">Vai alla home (IT)</a>
+      <a href="/en/">Go to homepage (EN)</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -93,7 +93,7 @@ a { color: inherit; }
   padding: 0 64px;
   height: 70px;
 }
-.nav-logo img { height: 38px; }
+.nav-logo img { height: 38px; width: auto; }
 .nav-r { display: flex; align-items: center; gap: 32px; }
 .nav-r a {
   color: var(--text-mid);
@@ -237,7 +237,7 @@ a { color: inherit; }
 .page-hero-bg {
   position: absolute;
   inset: 0;
-  background: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80') center/cover;
+  background: url('../img/manutenzione-impianto-hero.jpg') center/cover;
   opacity: .15;
 }
 .page-hero-grad {
@@ -471,7 +471,7 @@ a { color: inherit; }
   position: absolute;
   right: 0; top: 0; bottom: 0;
   width: 45%;
-  background: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=900&q=80') center/cover;
+  background: url('../img/manutenzione-impianto-hero.jpg') center/cover;
   opacity: .1;
 }
 .gov-in { position: relative; z-index: 2; }
@@ -747,7 +747,7 @@ a { color: inherit; }
 /* ── FOOTER ── */
 .ft { background: var(--navy); padding: 64px; color: rgba(255,255,255,.75); }
 .ft-in { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; }
-.ft-brand img { height: 30px; margin-bottom: 14px; border-radius: 2px; }
+.ft-brand img { height: 30px; width: auto; margin-bottom: 14px; border-radius: 2px; }
 .ft-brand p { font-size: 13px; line-height: 1.7; max-width: 260px; }
 .ft h4 {
   color: rgba(255,255,255,.55);

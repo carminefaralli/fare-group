@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home -->
+  <url>
+    <loc>https://www.fare-group.com/it/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/"/>
+  </url>
+  <url>
+    <loc>https://www.fare-group.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/"/>
+  </url>
+
+  <!-- Chi siamo / About -->
+  <url>
+    <loc>https://www.fare-group.com/it/chi-siamo.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/chi-siamo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/about.html"/>
+  </url>
+  <url>
+    <loc>https://www.fare-group.com/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/chi-siamo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/about.html"/>
+  </url>
+
+  <!-- Contatti / Contact -->
+  <url>
+    <loc>https://www.fare-group.com/it/contatti.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/contatti.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/contact.html"/>
+  </url>
+  <url>
+    <loc>https://www.fare-group.com/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/contatti.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/contact.html"/>
+  </url>
+
+  <!-- Servizi / Services -->
+  <url>
+    <loc>https://www.fare-group.com/it/servizi.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/servizi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/services.html"/>
+  </url>
+  <url>
+    <loc>https://www.fare-group.com/en/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/servizi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/services.html"/>
+  </url>
+
+  <!-- Modello / Model -->
+  <url>
+    <loc>https://www.fare-group.com/it/modello.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/modello.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/model.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/model.html"/>
+  </url>
+  <url>
+    <loc>https://www.fare-group.com/en/model.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/modello.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/model.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/model.html"/>
+  </url>
+
+  <!-- Tech -->
+  <url>
+    <loc>https://www.fare-group.com/it/tech.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/tech.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/tech.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/tech.html"/>
+  </url>
+  <url>
+    <loc>https://www.fare-group.com/en/tech.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/tech.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/tech.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/tech.html"/>
+  </url>
+
+</urlset>
