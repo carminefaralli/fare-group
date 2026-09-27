@@ -52,12 +52,16 @@ c=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "$H/bot")
 curl -s --max-time 20 "$H/bot" | grep -q "FARE-SalesOffice/1.0" \
   && ok "/bot contiene l'identificativo FARE-SalesOffice/1.0" || ko "/bot non contiene l'identificativo FARE-SalesOffice/1.0"
 
-echo "== 8. vecchie pagine /it/bot e /en/bot redirette in modo permanente a /bot =="
-for u in "/it/bot" "/en/bot"; do
-  read -r code loc < <(curl -s -o /dev/null -w "%{http_code} %{redirect_url}" --max-time 20 "$H$u")
-  [ "$code" = "301" ] && ok "$u -> 301 (letto: $code)" || ko "$u atteso 301, letto $code"
-  case "$loc" in */bot) ok "$u Location $loc";; *) ko "$u Location attesa /bot, letta '$loc'";; esac
-done
+echo "== 8. vecchia pagina /it/bot redirette in modo permanente a /bot =="
+read -r code loc < <(curl -s -o /dev/null -w "%{http_code} %{redirect_url}" --max-time 20 "$H/it/bot")
+[ "$code" = "301" ] && ok "/it/bot -> 301 (letto: $code)" || ko "/it/bot atteso 301, letto $code"
+case "$loc" in */bot) ok "/it/bot Location $loc";; *) ko "/it/bot Location attesa /bot, letta '$loc'";; esac
+
+echo "== 9. pagina /en/bot (versione inglese completa, non redirect) =="
+c=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "$H/en/bot")
+[ "$c" = "200" ] && ok "/en/bot -> 200" || ko "/en/bot -> $c (atteso 200)"
+curl -s --max-time 20 "$H/en/bot" | grep -q "FARE-SalesOffice/1.0" \
+  && ok "/en/bot contiene l'identificativo FARE-SalesOffice/1.0" || ko "/en/bot non contiene l'identificativo FARE-SalesOffice/1.0"
 
 echo
 [ $fail -eq 0 ] && echo "RISULTATO: tutti i check PASS" || echo "RISULTATO: almeno un FAIL"
