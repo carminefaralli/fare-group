@@ -20,16 +20,6 @@
       "route": "/it/bot.html",
       "redirect": "/bot",
       "statusCode": 301
-    },
-    {
-      "route": "/en/bot",
-      "redirect": "/bot",
-      "statusCode": 301
-    },
-    {
-      "route": "/en/bot.html",
-      "redirect": "/bot",
-      "statusCode": 301
     }
   ],
   "responseOverrides": {
