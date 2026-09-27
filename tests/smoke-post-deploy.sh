@@ -46,6 +46,12 @@ for u in "/it/" "/en/" "/it/servizi.html"; do
   [ "$n" = "0" ] && ok "$u zero img Unsplash remote" || ko "$u ha ancora $n img Unsplash (CSP le blocca)"
 done
 
+echo "== 7. pagina /bot per il programma di lettura del Sales Office =="
+c=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "$H/bot")
+[ "$c" = "200" ] && ok "/bot -> 200" || ko "/bot -> $c (atteso 200)"
+curl -s --max-time 20 "$H/bot" | grep -q "FARE-SalesOffice/1.0" \
+  && ok "/bot contiene l'identificativo FARE-SalesOffice/1.0" || ko "/bot non contiene l'identificativo FARE-SalesOffice/1.0"
+
 echo
 [ $fail -eq 0 ] && echo "RISULTATO: tutti i check PASS" || echo "RISULTATO: almeno un FAIL"
 exit $fail
