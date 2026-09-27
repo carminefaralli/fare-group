@@ -63,6 +63,18 @@ c=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "$H/en/bot")
 curl -s --max-time 20 "$H/en/bot" | grep -q "FARE-SalesOffice/1.0" \
   && ok "/en/bot contiene l'identificativo FARE-SalesOffice/1.0" || ko "/en/bot non contiene l'identificativo FARE-SalesOffice/1.0"
 
+echo "== 10. GA4 presente ma bloccato fino al consenso iubenda, CSP aperta ai soli domini Google Analytics =="
+for u in "/it/" "/en/" "/it/contatti.html" "/en/contact.html" "/bot"; do
+  b=$(curl -s --max-time 20 "$H$u")
+  echo "$b" | grep -q 'class="_iub_cs_activate" data-iub-purposes="4" async data-suppressedsrc="https://www.googletagmanager.com/gtag/js?id=G-6G17HPDNFM"' \
+    && ok "$u tag GA4 bloccato (text/plain, finalita' 4)" || ko "$u tag GA4 bloccato assente"
+  echo "$b" | grep -qE '<script[^>]* src="https://www.googletagmanager.com' \
+    && ko "$u carica GA4 SENZA attendere il consenso" || ok "$u nessun GA4 caricato prima del consenso"
+done
+csp=$(curl -s -D - -o /dev/null --max-time 20 "$H/it/" | grep -i '^content-security-policy:')
+echo "$csp" | grep -q "script-src[^;]*https://www.googletagmanager.com" && ok "CSP script-src ammette googletagmanager" || ko "CSP script-src senza googletagmanager"
+echo "$csp" | grep -q "connect-src[^;]*https://\*.google-analytics.com" && ok "CSP connect-src ammette google-analytics" || ko "CSP connect-src senza google-analytics"
+
 echo
 [ $fail -eq 0 ] && echo "RISULTATO: tutti i check PASS" || echo "RISULTATO: almeno un FAIL"
 exit $fail
