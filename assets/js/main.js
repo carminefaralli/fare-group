@@ -160,6 +160,11 @@ document.addEventListener('DOMContentLoaded', function() {
           if (res.status >= 200 && res.status < 300 && res.body && res.body.ok) {
             setStatus(i18n.success, 'success');
             contactForm.reset();
+            // Conta la richiesta solo a invio riuscito; nessun dato del modulo va ad Analytics.
+            // gtag esiste solo se il visitatore ha dato il consenso alla misurazione (iubenda).
+            if (typeof window.gtag === 'function') {
+              window.gtag('event', 'generate_lead', { form_id: 'contatti' });
+            }
           } else if (res.status === 400 && res.body && res.body.fields) {
             res.body.fields.forEach(markFieldError);
             setStatus(i18n.invalid, 'error');
