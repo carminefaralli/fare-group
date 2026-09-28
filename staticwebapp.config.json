@@ -20,6 +20,16 @@
       "route": "/it/bot.html",
       "redirect": "/bot",
       "statusCode": 301
+    },
+    {
+      "route": "/intranet",
+      "redirect": "https://fare143.sharepoint.com/SitePages/Hub.aspx",
+      "statusCode": 302
+    },
+    {
+      "route": "/intranet/",
+      "redirect": "https://fare143.sharepoint.com/SitePages/Hub.aspx",
+      "statusCode": 302
     }
   ],
   "responseOverrides": {
