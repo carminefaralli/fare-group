@@ -7,9 +7,9 @@ fail=0
 ok(){ printf "  PASS  %s\n" "$1"; }
 ko(){ printf "  FAIL  %s\n" "$1"; fail=1; }
 
-echo "== 1. redirect root -> /it/ (302) =="
+echo "== 1. redirect root -> /it/ (301 definitivo, cosi' Google indicizza /it/ e non la root) =="
 read -r code loc < <(curl -s -o /dev/null -w "%{http_code} %{redirect_url}" --max-time 20 "$H/")
-[ "$code" = "302" ] && ok "status 302 (letto: $code)" || ko "atteso 302, letto $code"
+[ "$code" = "301" ] && ok "status 301 (letto: $code)" || ko "atteso 301, letto $code"
 case "$loc" in */it/) ok "Location $loc";; *) ko "Location attesa /it/, letta '$loc'";; esac
 
 echo "== 2. robots.txt e sitemap.xml non catturati dal redirect =="

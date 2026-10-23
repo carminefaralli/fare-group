@@ -4,12 +4,12 @@
     {
       "route": "/",
       "redirect": "/it/",
-      "statusCode": 302
+      "statusCode": 301
     },
     {
       "route": "/index.html",
       "redirect": "/it/",
-      "statusCode": 302
+      "statusCode": 301
     },
     {
       "route": "/it/bot",
