@@ -96,6 +96,18 @@ types = {n.get('@type') for b in blocks for n in json.loads(b).get('@graph', [])
 sys.exit(0 if blocks and ({'Organization', 'FAQPage'} <= types or 'SoftwareApplication' in types) else 1)
 " && ok "$u JSON-LD valido con i tipi attesi" || ko "$u JSON-LD assente, non valido o senza i tipi attesi"
 done
+for u in "/it/" "/en/" "/it/methaniq.html" "/en/methaniq.html"; do
+  curl -s --max-time 20 "$H$u" | python3 -c "
+import sys, re, json, html
+s = sys.stdin.read()
+clean = lambda x: html.unescape(re.sub(r'<[^>]+>', '', x)).strip()
+box = re.search(r'<div class=\"faq-list\">(.*?)</div>', s, re.S)
+visible = [clean(q) for q in re.findall(r'<summary>(.*?)</summary>', box.group(1))] if box else []
+nodes = [n for b in re.findall(r'<script type=\"application/ld\+json\">(.*?)</script>', s, re.S) for n in json.loads(b).get('@graph', [])]
+schema = [q['name'] for n in nodes if n.get('@type') == 'FAQPage' for q in n['mainEntity']]
+sys.exit(0 if visible and visible == schema else 1)
+" && ok "$u FAQ nello schema = FAQ visibili" || ko "$u FAQ nello schema diverse da quelle visibili"
+done
 
 [ $fail -eq 0 ] && echo "RISULTATO: tutti i check PASS" || echo "RISULTATO: almeno un FAIL"
 exit $fail
