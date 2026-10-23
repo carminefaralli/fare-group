@@ -224,3 +224,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+/* ── Contatti: i pulsanti "Richiedi una demo" arrivano con ?tipo=demo e preselezionano la voce ── */
+document.addEventListener('DOMContentLoaded', function() {
+  var select = document.getElementById('cf-type');
+  if (!select || !/[?&]tipo=demo\b/.test(window.location.search)) return;
+  var demo = Array.prototype.find.call(select.options, function(o) { return /demo/i.test(o.value); });
+  if (demo) select.value = demo.value;
+});
