@@ -25,6 +25,26 @@
       "route": "/intranet",
       "redirect": "https://fare143.sharepoint.com/",
       "statusCode": 302
+    },
+    {
+      "route": "/it/tech.html",
+      "redirect": "/it/methaniq.html",
+      "statusCode": 301
+    },
+    {
+      "route": "/it/tech",
+      "redirect": "/it/methaniq.html",
+      "statusCode": 301
+    },
+    {
+      "route": "/en/tech.html",
+      "redirect": "/en/methaniq.html",
+      "statusCode": 301
+    },
+    {
+      "route": "/en/tech",
+      "redirect": "/en/methaniq.html",
+      "statusCode": 301
     }
   ],
   "responseOverrides": {

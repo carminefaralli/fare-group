@@ -19,12 +19,14 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services — FAR.E. Group</title>
-<meta name="description" content="FAR.E. services are designed to govern the entire plant system: plant management, feedstock and recipes, project development, digital and AI.">
-<meta property="og:title" content="Services — FAR.E. Group">
-<meta property="og:description" content="Plant management, feedstock, project development and digital: an integrated system.">
+<title>Services for biogas and biomethane plants | FAR.E Group</title>
+<meta name="description" content="Feedstock management, plant operations on behalf of owners, project management and technical and contract advisory, the Methan.IQ platform. FAR.E Group services for biogas and biomethane plants.">
+<meta property="og:title" content="Services for biogas and biomethane plants | FAR.E Group">
+<meta property="og:description" content="Feedstock management, plant operations on behalf of owners, project management and technical and contract advisory, the Methan.IQ platform. FAR.E Group services for biogas and biomethane plants.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.fare-group.com/en/services.html">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="FAR.E Group">
 <meta property="og:image" content="https://www.fare-group.com/assets/img/og-cover.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -33,111 +35,163 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
 <link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/services.html">
 <link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/services.html">
 <link rel="canonical" href="https://www.fare-group.com/en/services.html">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Biogas and biomethane plant system governance",
-  "description": "FAR.E. services are designed to govern the entire plant system: plant management, feedstock and recipes, project development, digital and AI.",
-  "provider": {
-    "@id": "https://www.fare-group.com/#organization"
-  },
-  "serviceType": [
-    "Plant Management",
-    "Feedstock & Recipes",
-    "Project Development & Origination",
-    "Digital & AI"
-  ],
-  "url": "https://www.fare-group.com/en/services.html"
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.fare-group.com/en/"
+      "@type": "Organization",
+      "@id": "https://www.fare-group.com/#organization",
+      "name": "FAR.E Group",
+      "alternateName": [
+        "FARE Group",
+        "Fare Group"
+      ],
+      "url": "https://www.fare-group.com/",
+      "logo": "https://www.fare-group.com/assets/img/logo-color.png"
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Services",
-      "item": "https://www.fare-group.com/en/services.html"
+      "@type": "Organization",
+      "@id": "https://www.fare-group.com/#fare-energy",
+      "name": "FAR.E Energy",
+      "legalName": "FAR.E. Energy S.r.l."
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.fare-group.com/#fare-services",
+      "name": "FAR.E Services",
+      "legalName": "FAR.E. Services S.r.l."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.fare-group.com/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.fare-group.com/en/services.html"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.fare-group.com/en/services.html#feedstock",
+      "name": "Feedstock management for biogas and biomethane plants",
+      "serviceType": "Feedstock management",
+      "description": "Review of recipe and procurement, supply contracts, incoming quality and digester recipe judged on the cost per cubic metre of methane.",
+      "provider": {
+        "@id": "https://www.fare-group.com/#fare-services"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Italy"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.fare-group.com/en/services.html#operations",
+      "name": "Biogas plant operations on behalf of owners",
+      "serviceType": "Plant operations",
+      "description": "Running the plant on behalf of the owners: operators working to standard procedures, feedstock yard and loads traced, preventive maintenance.",
+      "provider": {
+        "@id": "https://www.fare-group.com/#fare-energy"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Italy"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.fare-group.com/en/services.html#projects",
+      "name": "Project management and technical and contract advisory for biomethane plants",
+      "serviceType": "Project management",
+      "description": "Coordination of suppliers and activities and technical and contract support for biogas and biomethane plants.",
+      "provider": {
+        "@id": "https://www.fare-group.com/#fare-services"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Italy"
+      }
     }
   ]
 }
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
 <div class="topbar"><a href="/assets/Code_of_Ethics_FAR.E.pdf" target="_blank" rel="noopener">Code of Ethics</a><a href="https://whistlesblow.it/c/fare-societa-a-responsabilita-limitata-semplificata/2" target="_blank" rel="noopener">Whistleblowing</a><a href="https://www.iubenda.com/privacy-policy/25793588" target="_blank" rel="noopener">Privacy</a><div class="lang"><a href="/it/servizi.html">IT</a><a href="/en/services.html" class="on">EN</a></div></div>
-<nav class="nav"><a href="/en/" class="nav-logo"><img src="../assets/img/logo-color.png" alt="FAR.E. Group" width="845" height="379"></a><button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button><div class="nav-r"><a href="/en/">Home</a><a href="/en/model.html">Model</a><a href="/en/services.html" class="on">Services</a><a href="/en/tech.html">Tech</a><a href="/en/about.html">About</a><a href="/en/contact.html">Contact</a></div></nav>
+<nav class="nav"><a href="/en/" class="nav-logo"><img src="../assets/img/logo-color.png" alt="FAR.E Group" width="845" height="379"></a><button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button><div class="nav-r"><a href="/en/">Home</a><a href="/en/model.html">Model</a><a href="/en/services.html" class="on">Services</a><a href="/en/methaniq.html">Methan.IQ</a><a href="/en/about.html">About</a><a href="/en/contact.html">Contact</a></div></nav>
 
-<section class="page-hero"><div class="page-hero-bg"></div><div class="page-hero-grad"></div><div class="page-hero-in"><div class="bc"><a href="/en/">Home</a> <span>/</span> Services</div><h1>Services</h1><p class="hl">FAR.E. services are designed to govern the entire plant system, not individual activities.</p></div></section>
+<section class="page-hero"><div class="page-hero-bg"></div><div class="page-hero-grad"></div><div class="page-hero-in"><div class="bc"><a href="/en/">Home</a> <span>/</span> Services</div><h1>Services</h1><p class="hl">What we can do for your biogas or biomethane plant. One service or all of them, always alongside the owners.</p></div></section>
 
 <!-- STATEMENT -->
-<div class="statement"><div class="statement-in"><div class="statement-box"><div class="statement-bar"></div><div><p><strong>We intervene on an industrial system.</strong> Each component below is part of an integrated model, not an isolated service.</p><p style="font-size:17px;color:rgba(255,255,255,.8);margin-top:16px;font-style:italic;font-weight:300">Our goal is to create value by governing the system. Because most plants lose margin every day due to lack of industrial control.</p></div></div></div></div>
+<div class="statement"><div class="statement-in"><div class="statement-box"><div class="statement-bar"></div><div><p><strong>One shared goal: producing methane at a lower cost.</strong> Each service below works on part of that cost.</p><p style="font-size:17px;color:rgba(255,255,255,.8);margin-top:16px;font-style:italic;font-weight:300">We work with the owners and the plant team: we bring method, tools and control of the numbers, while decisions stay with those who own the plant.</p></div></div></div></div>
 
-<!-- SERVIZIO 1 -->
-<section class="svc"><div class="svc-in">
-  <div class="svc-text">
-    <h2>Plant Management</h2>
-    <div class="svc-sub">Operational control and industrial plant management</div>
-    <p>We manage the plant as an industrial asset, not as agricultural infrastructure. Every operational decision is structured, every parameter is monitored, every anomaly is managed before it becomes a problem.</p>
-    <ul class="svc-list"><li>Continuous performance monitoring</li><li>Operational activity coordination</li><li>Planned and predictive maintenance</li><li>Anomaly and intervention management</li><li>Reporting and KPIs</li></ul>
+<!-- SERVICE 1 -->
+<section class="svc" id="feedstock"><div class="svc-in">
+  <div class="svc-text reveal">
+    <h2>Feedstock and recipe</h2>
+    <div class="svc-sub">Feedstock management</div>
+    <p>We look at what goes into the digester, what it costs and how much methane it really produces. Then we redesign recipe and procurement to lower the cost per cubic metre of methane. By reviewing plant recipes and procurement, we identify between €150,000 and €500,000 per year in lower feedstock cost per plant.</p>
+    <ul class="svc-list"><li>Review of recipe and supply contracts</li><li>Recipe designed on the cost per cubic metre of methane</li><li>Supplier selection and incoming quality control</li><li>Logistics and traceability of deliveries</li><li>Today we follow 9 plants: 6 operating and 3 in development</li></ul>
   </div>
-  <div class="svc-visual"><img src="../assets/img/gestione-impianti.jpg" alt="Plant management" width="1200" height="800" loading="lazy"></div>
+  <div class="svc-visual"><img src="../assets/img/campo-biomasse.jpg" width="800" height="450" alt="Feedstock for biogas plants" loading="lazy"></div>
 </div></section>
 
-<!-- SERVIZIO 2 -->
-<section class="svc" style="background:var(--bg)"><div class="svc-in">
-  <div class="svc-visual"><img src="../assets/img/campo-biomasse.jpg" alt="Feedstock" width="800" height="450" loading="lazy"></div>
-  <div class="svc-text">
-    <h2>Feedstock &amp; Recipes</h2>
-    <div class="svc-sub">Supply chain management and digester diet optimization</div>
-    <p>We don't buy feedstock — we govern its quality and value. Every contract is based on real energy value, not tonnage. Every recipe is optimized to maximize methane production at the lowest cost.</p>
-    <ul class="svc-list"><li>Supplier selection and qualification</li><li>Input quality control</li><li>Contract and logistics management</li><li>Biological recipe optimization</li><li>Real cost reduction per Nm³ CH₄</li></ul>
+<!-- SERVICE 2 -->
+<section class="svc" id="operations" style="background:var(--bg)"><div class="svc-in">
+  <div class="svc-visual"><img src="../assets/img/gestione-impianti.jpg" width="1200" height="800" alt="Plant operations" loading="lazy"></div>
+  <div class="svc-text reveal">
+    <h2>Plant operations</h2>
+    <div class="svc-sub">Running the plant on behalf of the owners</div>
+    <p>We run the plant on behalf of those who own it, with standard procedures and clear responsibilities. We do not own plants: we work for the owners and report to them every day.</p>
+    <ul class="svc-list"><li>Operators on site working to standard procedures</li><li>Feedstock yard, loading and storage</li><li>Every load traced in Methan.IQ</li><li>Preventive maintenance with a quarterly plan</li><li>Critical spare parts in stock and emergency procedures</li></ul>
+    <a href="/en/model.html#case-study" class="svc-link">Read the case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
   </div>
 </div></section>
 
-<!-- SERVIZIO 3 -->
-<section class="svc"><div class="svc-in">
-  <div class="svc-text">
-    <h2>Project Development &amp; Origination</h2>
-    <div class="svc-sub">Identification, development and structuring of investment opportunities</div>
-    <p>We don't analyze projects. We identify them, structure them and bring them to maturity. We operate upstream of the industrial cycle, where value is created: in opportunity selection, building the authorization foundations and defining investable assets.</p>
-    <ul class="svc-list"><li>Investment opportunity identification</li><li>Project pipeline development</li><li>Authorization support</li><li>Technical and economic structuring</li><li>Investor alignment</li></ul>
+<!-- SERVICE 3 -->
+<section class="svc" id="projects"><div class="svc-in">
+  <div class="svc-text reveal">
+    <h2>Projects</h2>
+    <div class="svc-sub">Project management and technical and contract advisory</div>
+    <p>We follow the construction and start-up of plants and support the owners on technical contracts. The largest plant we follow in project management has a capacity of 1,000 Sm³/h.</p>
+    <ul class="svc-list"><li>Coordination of suppliers and activities</li><li>Technical advisory on contracts</li><li>Recipe and procurement set up before start-up</li><li>Field organisation from day one</li></ul>
   </div>
-  <div class="svc-visual"><img src="../assets/img/sviluppo-progetti.jpg" alt="Project development" width="800" height="533" loading="lazy"></div>
+  <div class="svc-visual"><img src="../assets/img/sviluppo-progetti.jpg" width="800" height="533" alt="Biomethane plant project" loading="lazy"></div>
 </div></section>
 
-<!-- SERVIZIO 4 -->
-<section class="svc" style="background:var(--bg)"><div class="svc-in">
-  <div class="svc-visual" style="position:relative"><img src="../assets/img/dashboard-analytics.jpg" alt="Digital and AI" width="800" height="533" loading="lazy"></div>
-  <div class="svc-text">
-    <h2>Digital &amp; AI</h2>
-    <div class="svc-sub">Decision support and advanced monitoring</div>
-    <p>We don't start from technology. We start from real plants. Everything we develop comes from concrete problems and serves to make operational decisions faster, informed and traceable.</p>
-    <ul class="svc-list"><li>Data collection and integration</li><li>Performance and anomaly analysis</li><li>Predictive model development</li><li>Dashboards and reporting</li><li>Evolution towards digital twin</li></ul>
-    <a href="/en/tech.html" class="svc-link">Discover FAR.E Tech <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+<!-- SERVICE 4 -->
+<section class="svc" id="methaniq" style="background:var(--bg)"><div class="svc-in">
+  <div class="svc-visual" style="position:relative"><img src="../assets/img/dashboard-analytics.jpg" width="800" height="533" alt="Methan.IQ platform" loading="lazy"></div>
+  <div class="svc-text reveal">
+    <h2>Methan.IQ</h2>
+    <div class="svc-sub">The platform for running the plant from a phone</div>
+    <p>It is the tool we use in the field, and we also offer it to plants that run their own operations, as a monthly subscription per plant. The field follows defined procedures, the owners receive a report every day.</p>
+    <ul class="svc-list"><li>Guided loading against a loading plan</li><li>Feedstock certifiability check</li><li>Deliveries against forecast and stock levels</li><li>Daily email report and sustainability report</li><li>Simulator: theoretical and measured production</li></ul>
+    <a href="/en/methaniq.html" class="svc-link">Discover Methan.IQ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
   </div>
 </div></section>
 
 <!-- CONNECTION -->
-<div class="connection"><p>Value is created when these activities work as <strong>a single system</strong>. Treating them separately means optimizing individual elements, not the result. When they work together, the plant stops reacting. It starts being <strong>governed</strong>.</p></div>
+<div class="connection"><p>The services work on their own, but they give their best <strong>together</strong>: a better recipe is of little use if it is not followed in the field, and data only matters if it reaches those who <strong>decide</strong>.</p></div>
 
 <!-- CTA -->
-<section class="cta"><div class="sec-in"><h2 class="h2">Want to understand where margin is lost in your plant?</h2><p class="cta-sub">We can analyze the plant system together and identify value levers.</p><a href="/en/contact.html" class="b-w">Analyze where margin is lost <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a href="https://www.youtube.com/@FAR.E.Channel" target="_blank" rel="noopener" class="b-ghost">Watch FAR.E Channel</a></div></section>
+<section class="cta"><div class="sec-in"><h2 class="h2">Which service do we start from?</h2><p class="cta-sub">Tell us about your plant: we usually start from recipe and supply contracts, where savings are quickest to measure.</p><a href="/en/contact.html" class="b-w">Let's review your plant <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a href="https://www.youtube.com/@FAR.E.Channel" target="_blank" rel="noopener" class="b-ghost">Watch FAR.E Channel</a></div></section>
 
-<footer class="ft"><div class="ft-in"><div class="ft-brand"><img src="../assets/img/logo-footer.png" alt="FAR.E" width="176" height="76"><p>Industrial platform for biogas and biomethane.</p></div><div><h4>Navigation</h4><a href="/en/">Home</a><a href="/en/model.html">Model</a><a href="/en/services.html">Services</a><a href="/en/tech.html">Tech</a><a href="/en/about.html">About</a></div><div><h4>Legal</h4><a href="/assets/Code_of_Ethics_FAR.E.pdf" target="_blank" rel="noopener">Code of Ethics</a><a href="https://whistlesblow.it/c/fare-societa-a-responsabilita-limitata-semplificata/2" target="_blank" rel="noopener">Whistleblowing</a><a href="https://www.iubenda.com/privacy-policy/25793588" target="_blank" rel="noopener" class="iubenda-nostyle iubenda-noiframe iubenda-embed">Privacy Policy</a><a href="https://www.iubenda.com/privacy-policy/25793588/cookie-policy" target="_blank" rel="noopener" class="iubenda-nostyle iubenda-noiframe iubenda-embed">Cookie Policy</a><a href="/en/privacy-commercial-activity.html">Privacy in commercial activity</a><a href="/en/bot">Automated systems</a></div><div><h4>Contact</h4><a href="mailto:info@fare-group.com">info@fare-group.com</a><a href="https://www.youtube.com/@FAR.E.Channel" target="_blank" rel="noopener">FAR.E Channel</a><a href="https://www.linkedin.com/company/far-e/" target="_blank" rel="noopener">LinkedIn</a></div></div><div class="ft-bot"><span>&copy; 2026 FAR.E Group</span></div></footer>
+<footer class="ft"><div class="ft-in"><div class="ft-brand"><img src="../assets/img/logo-footer.png" width="176" height="76" alt="FAR.E Group"><p>FAR.E Group brings together FAR.E Energy and FAR.E Services: feedstock, plant operations, projects and the Methan.IQ platform for biogas and biomethane plants.</p></div><div><h4>Navigation</h4><a href="/en/">Home</a><a href="/en/model.html">Model</a><a href="/en/services.html">Services</a><a href="/en/methaniq.html">Methan.IQ</a><a href="/en/about.html">About</a></div><div><h4>Legal</h4><a href="/assets/Code_of_Ethics_FAR.E.pdf" target="_blank" rel="noopener">Code of Ethics</a><a href="https://whistlesblow.it/c/fare-societa-a-responsabilita-limitata-semplificata/2" target="_blank" rel="noopener">Whistleblowing</a><a href="https://www.iubenda.com/privacy-policy/25793588" target="_blank" rel="noopener" class="iubenda-nostyle iubenda-noiframe iubenda-embed">Privacy Policy</a><a href="https://www.iubenda.com/privacy-policy/25793588/cookie-policy" target="_blank" rel="noopener" class="iubenda-nostyle iubenda-noiframe iubenda-embed">Cookie Policy</a><a href="/en/privacy-commercial-activity.html">Privacy in commercial activity</a><a href="/en/bot">Automated systems</a></div><div><h4>Contact</h4><a href="mailto:info@fare-group.com">info@fare-group.com</a><a href="https://www.youtube.com/@FAR.E.Channel" target="_blank" rel="noopener">FAR.E Channel</a><a href="https://www.linkedin.com/company/105126050" target="_blank" rel="noopener">LinkedIn</a></div></div><div class="ft-legal"><p><strong>FAR.E. Group S.r.l.</strong> · Registered office: Via XXIV Maggio 235, 86170 Isernia (IS) · Offices: Via Raffaello Lambruschini 38/A, 50134 Firenze (FI) · Molise Companies Register · Tax code/VAT no. 01017870948 · REA IS-219096 · Share capital €20,000.00 fully paid · Single-member company · PEC far.e.groupsrl@legalmail.it</p><p><strong>FAR.E. Energy S.r.l.</strong> · Registered office: Via Raffaello Lambruschini 38/A, 50134 Firenze (FI) · Florence Companies Register · Tax code/VAT no. 07503250487 · REA FI-707977 · Share capital €10,000.00 fully paid · PEC far.e.energysrl@legalmail.it</p><p><strong>FAR.E. Services S.r.l.</strong> · Registered office: Via XXIV Maggio 235, 86170 Isernia (IS) · Molise Companies Register · Tax code/VAT no. 01001560943 · REA IS-214579 · Share capital €10,000.00 fully paid · PEC far.e@pec.it</p></div><div class="ft-bot"><span>&copy; 2026 FAR.E Group</span></div></footer>
 <script src="../assets/js/main.js"></script>
 </body>
 </html>

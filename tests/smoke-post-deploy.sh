@@ -76,5 +76,26 @@ echo "$csp" | grep -q "script-src[^;]*https://www.googletagmanager.com" && ok "C
 echo "$csp" | grep -q "connect-src[^;]*https://\*.google-analytics.com" && ok "CSP connect-src ammette google-analytics" || ko "CSP connect-src senza google-analytics"
 
 echo
+echo "== 11. pagina Methan.IQ e vecchia Tech redirette in modo permanente =="
+for l in it en; do
+  c=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "$H/$l/methaniq.html")
+  [ "$c" = "200" ] && ok "/$l/methaniq.html -> 200" || ko "/$l/methaniq.html -> $c (atteso 200)"
+  read -r code loc < <(curl -s -o /dev/null -w "%{http_code} %{redirect_url}" --max-time 20 "$H/$l/tech.html")
+  [ "$code" = "301" ] && ok "/$l/tech.html -> 301" || ko "/$l/tech.html atteso 301, letto $code"
+  case "$loc" in */$l/methaniq.html) ok "/$l/tech.html Location $loc";; *) ko "/$l/tech.html Location attesa /$l/methaniq.html, letta '$loc'";; esac
+done
+
+echo "== 12. GEO: llms.txt e dati strutturati =="
+c=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "$H/llms.txt")
+[ "$c" = "200" ] && ok "/llms.txt -> 200" || ko "/llms.txt -> $c (atteso 200)"
+for u in "/it/" "/en/" "/it/methaniq.html"; do
+  curl -s --max-time 20 "$H$u" | python3 -c "
+import sys, re, json
+blocks = re.findall(r'<script type=\"application/ld\+json\">(.*?)</script>', sys.stdin.read(), re.S)
+types = {n.get('@type') for b in blocks for n in json.loads(b).get('@graph', [])}
+sys.exit(0 if blocks and ({'Organization', 'FAQPage'} <= types or 'SoftwareApplication' in types) else 1)
+" && ok "$u JSON-LD valido con i tipi attesi" || ko "$u JSON-LD assente, non valido o senza i tipi attesi"
+done
+
 [ $fail -eq 0 ] && echo "RISULTATO: tutti i check PASS" || echo "RISULTATO: almeno un FAIL"
 exit $fail
