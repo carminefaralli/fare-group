@@ -50,7 +50,7 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
       "legalName": "FAR.E. Group S.r.l.",
       "url": "https://www.fare-group.com/",
       "logo": "https://www.fare-group.com/assets/img/logo-color.png",
-      "description": "Gruppo italiano che affianca proprietari, fondi e sviluppatori nella gestione di impianti di biogas e biometano: feedstock management, gestione operativa per conto della proprietà, project management, consulenza tecnica e contrattuale e la piattaforma Methan.IQ.",
+      "description": "Operatore tecnologico indipendente italiano (non possiede impianti e non vende tecnologia) che affianca proprietari, fondi e sviluppatori nella gestione di impianti di biogas e biometano: feedstock management, gestione operativa per conto della proprietà, project management, consulenza tecnica e contrattuale e la piattaforma Methan.IQ.",
       "taxID": "01017870948",
       "vatID": "IT01017870948",
       "address": {
@@ -78,6 +78,7 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
         "@type": "Country",
         "name": "Italia"
       },
+      "slogan": "Abbassiamo il costo di produzione del metano",
       "knowsAbout": [
         "biogas",
         "biometano",
@@ -153,6 +154,14 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Scopri la risposta",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In un impianto biogas che abbiamo gestito, alcune matrici economiche in apparenza avevano resa bassissima: a parità di prezzo, il metano costava fino a dieci volte di più. Abbiamo riprogettato la ricetta partendo dal costo per metro cubo di metano."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Che cosa fa FAR.E Group?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -164,7 +173,7 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
           "name": "Dove opera FAR.E Group?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "In Italia. FAR.E Group ha sede legale a Isernia e uffici a Firenze, e lavora su impianti in Lombardia, Lazio ed Emilia-Romagna."
+            "text": "In tutta Italia, con un network regionale che ci tiene vicini agli impianti. FAR.E Group ha sede legale a Isernia e uffici a Firenze."
           }
         },
         {
@@ -177,10 +186,10 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
         },
         {
           "@type": "Question",
-          "name": "FAR.E Group possiede impianti?",
+          "name": "FAR.E Group possiede impianti o vende tecnologia?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. FAR.E Energy gestisce impianti per conto dei proprietari e non possiede impianti propri."
+            "text": "No. FAR.E Group è un operatore tecnologico indipendente: non possiede impianti e non vende impianti né macchinari. FAR.E Energy gestisce impianti per conto dei proprietari."
           }
         },
         {
@@ -220,6 +229,7 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
   ]
 }
 </script>
+<link rel="stylesheet" href="../assets/css/methaniq.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -234,32 +244,42 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
 <section class="hero">
   <div class="hero-bg" style="background-image:url('../assets/img/biodigestore-hero.jpg')"></div>
   <div class="hero-grad"></div>
-  <div class="hero-in">
+  <div class="hero-in solo">
     <div class="hero-txt">
-      <div class="hero-tag">Biogas e biometano in Italia</div>
-      <h1>
-        Abbassiamo il costo del metano negli impianti di biogas e biometano.
-        <em>Insieme alla proprietà e al team dell'impianto.</em>
-      </h1>
-      <p class="hero-sub">FAR.E Group affianca proprietari, fondi e sviluppatori nella gestione degli impianti. Scegliamo e controlliamo le biomasse, organizziamo il lavoro in campo con procedure chiare e misuriamo quanto costa davvero ogni metro cubo di metano. Con Methan.IQ, la nostra piattaforma, ogni carico resta tracciato.</p>
+      <div class="hero-tag">Biogas e biometano, in tutta Italia</div>
+      <h1 class="big">Abbassiamo il costo di produzione del metano.<em>Insieme alla proprietà e al team dell'impianto.</em></h1>
+      <p class="hero-sub">FAR.E Group è un operatore tecnologico indipendente: lavoriamo su biomasse, ricetta e lavoro in campo, e misuriamo quanto costa davvero ogni metro cubo di metano. Fino a 500.000 € l'anno di risparmio individuato sulla ricetta di un singolo impianto.</p>
       <div class="hero-btns">
-        <a href="/it/contatti.html" class="b b-g">Analizziamo il tuo impianto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-        <a href="/it/methaniq.html" class="b b-o">Scopri Methan.IQ</a>
+        <a href="/it/contatti.html" class="b b-g">Analizziamo il tuo impianto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <a href="#caso" class="b b-o">Guarda un caso</a>
       </div>
-    </div>
-    <div class="hero-stats">
-      <div class="h-stat"><span class="n">20</span><span class="l">Progetti e impianti su cui il nostro team ha lavorato</span></div>
-      <div class="h-stat"><span class="n">9</span><span class="l">Impianti seguiti oggi in feedstock management: 6 operativi, 3 in sviluppo</span></div>
-      <div class="h-stat"><span class="n">1</span><span class="l">Impianto biogas gestito interamente, dal piazzale alla manutenzione, con nostri operatori in campo</span></div>
-      <div class="h-stat"><span class="n">1.000<small>Sm³/h</small></span><span class="l">L'impianto più grande che seguiamo in project management</span></div>
+      <div class="hero-entry"><div class="hero-entry-lbl">Da dove vuoi partire?</div><div class="hero-entry-row"><a href="#caso"><b>Il costo delle biomasse</b><span>Ricetta e contratti di fornitura, valutati sul metano prodotto.</span><em>Guarda il caso &rarr;</em></a><a href="/it/methaniq.html"><b>Il lavoro in campo</b><span>Procedure e controllo di ogni carico, dal telefono.</span><em>Scopri Methan.IQ &rarr;</em></a><a href="/it/servizi.html#progetti"><b>Un nuovo progetto</b><span>Project management e consulenza tecnica e contrattuale.</span><em>Vedi i servizi &rarr;</em></a></div></div>
     </div>
   </div>
 </section>
 
-<!-- TENSION STRIP -->
-<div class="tension">
-  <p>Quanto ti costa davvero un metro cubo di metano?</p>
-</div>
+<!-- FATTI -->
+<div class="facts"><div class="facts-in"><div class="fact"><div class="n">20</div><div class="l">Progetti e impianti su cui il nostro team ha lavorato</div></div><div class="fact"><div class="n">9</div><div class="l">Impianti seguiti oggi in feedstock management: 6 operativi, 3 in sviluppo</div></div><div class="fact"><div class="n">1</div><div class="l">Impianto biogas gestito interamente, dal piazzale alla manutenzione, con nostri operatori in campo</div></div><div class="fact"><div class="n">1.000<small>Sm³/h</small></div><div class="l">L'impianto più grande che seguiamo in project management</div></div></div></div>
+
+<!-- CASO IN ANTEPRIMA -->
+<section class="sec teaser" id="caso">
+  <div class="sec-in">
+    <div class="lbl">Un caso reale</div>
+    <div class="teaser-lay">
+      <div class="reveal">
+        <p class="teaser-q">Una matrice costa poco a tonnellata.<br>E a metro cubo di metano?</p>
+        <details><summary>Scopri la risposta</summary><p>In un impianto biogas che abbiamo gestito, alcune matrici economiche in apparenza avevano resa bassissima: a parità di prezzo, il metano costava fino a dieci volte di più. Abbiamo riprogettato la ricetta partendo dal costo per metro cubo di metano.</p></details>
+      </div>
+      <div class="teaser-bars reveal">
+        <h3>Costo delle biomasse, su base annua</h3>
+        <div class="tb-row"><div class="tb-lbl"><span>Ricetta precedente</span><b>circa 680.000 €</b></div><div class="tb-track"><span style="--w:100%;--c:#C9873A"></span></div></div>
+        <div class="tb-row"><div class="tb-lbl"><span>Nuova ricetta</span><b>circa 360.000 €</b></div><div class="tb-track"><span style="--w:53%;--c:var(--green)"></span></div></div>
+        <p class="tb-cap">Stesso impianto, ricetta diversa: circa 320.000 € in meno, con un costo medio del metano intorno a 0,15 €/Nm³.</p>
+        <a href="/it/modello.html#caso-studio" class="res-link">Leggi il caso completo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- PROBLEMA -->
 <section class="sec prob">
@@ -332,6 +352,20 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
   </div>
 </section>
 
+<!-- METHAN.IQ -->
+<section class="mq mq-teaser">
+  <div class="mq-wrap mq-teaser-grid">
+    <div class="reveal">
+      <div class="mq-eyebrow">Methan.IQ</div>
+      <h2>Il metodo, in tasca<br>a chi lavora in campo.</h2>
+      <p class="mq-lead">La piattaforma che usiamo negli impianti, disponibile anche per chi gestisce da sé. Il campo esegue procedure definite, l'asset manager governa con i numeri di ogni giorno.</p>
+      <ul><li>Carico guidato e controllo di certificabilità delle biomasse</li><li>Arrivi rispetto al previsto e giacenze con avviso a 7 giorni</li><li>Report giornaliero via email alla proprietà</li><li>Simulatore: produzione teorica e misurata</li></ul>
+      <div class="mq-btns"><a href="/it/methaniq.html" class="mq-btn mq-btn-main">Scopri Methan.IQ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div>
+    </div>
+    <div class="mq-hero-stage" aria-hidden="true"><div class="mq-phone" data-active="4" aria-hidden="true"><div class="mq-screen"><div class="mq-scr" data-s="1"><div class="mq-scr-top"><div><div class="mq-scr-sub">Carico guidato</div><div class="mq-scr-title">Carico di oggi</div></div><div class="mq-avatar"></div></div><div class="mq-card"><div class="mq-row"><span>Biomassa A</span><span class="mq-pill ok">In linea</span></div><div class="mq-bar"><span style="--w:82%;--c:var(--mq-green)"></span></div><div class="mq-row"><span>Biomassa B</span><span class="mq-pill info">Completato</span></div><div class="mq-bar"><span style="--w:100%;--c:var(--mq-teal)"></span></div><div class="mq-row"><span>Biomassa C</span><span class="mq-pill warn">In corso</span></div><div class="mq-bar"><span style="--w:45%;--c:var(--mq-amber)"></span></div></div><div class="mq-cta-fake">Conferma carico</div></div><div class="mq-scr" data-s="2"><div class="mq-scr-top"><div><div class="mq-scr-sub">Conferimento</div><div class="mq-scr-title">Nuovo arrivo</div></div><div class="mq-avatar"></div></div><div class="mq-card"><div class="mq-row"><span>Fornitore</span><span class="mq-bar" style="width:46%;margin:0"><span style="--w:100%;--c:rgba(255,255,255,.22)"></span></span></div><div class="mq-row"><span>Biomassa</span><span class="mq-bar" style="width:46%;margin:0"><span style="--w:100%;--c:rgba(255,255,255,.22)"></span></span></div><div class="mq-row"><span>Trincea</span><span class="mq-bar" style="width:46%;margin:0"><span style="--w:100%;--c:rgba(255,255,255,.22)"></span></span></div></div><div class="mq-alert"><b>Biomassa non prevista dal piano</b><p>Per procedere serve una conferma esplicita. La scelta viene registrata.</p></div><div class="mq-two"><div>Conferma e registra</div><div>Annulla</div></div></div><div class="mq-scr" data-s="3"><div class="mq-scr-top"><div><div class="mq-scr-sub">Settimana</div><div class="mq-scr-title">Arrivi e giacenze</div></div><div class="mq-avatar"></div></div><div class="mq-card"><div class="mq-chart"><div><i style="--h:70%"></i><i style="--h:62%"></i></div><div><i style="--h:80%"></i><i style="--h:74%"></i></div><div><i style="--h:55%"></i><i style="--h:40%"></i></div><div><i style="--h:66%"></i><i style="--h:70%"></i></div><div><i style="--h:48%"></i><i style="--h:52%"></i></div><div><i style="--h:72%"></i><i style="--h:76%"></i></div><div><i style="--h:60%"></i><i style="--h:58%"></i></div></div><div class="mq-legend" style="margin-top:10px"><span>Previsto</span><span>Arrivato</span></div></div><div><span class="mq-pill warn">Copertura sotto 7 giorni</span></div><div><span class="mq-pill ok">Biomassa A in linea</span></div></div><div class="mq-scr" data-s="4"><div class="mq-scr-top"><div><div class="mq-scr-sub">Ogni mattina</div><div class="mq-scr-title">Report giornaliero</div></div><div class="mq-avatar"></div></div><div class="mq-card"><div class="mq-mail-head"><div class="mq-mail-ico"></div><div><b>Methan.IQ</b><div class="mq-scr-sub">Riepilogo di ieri</div></div></div><div style="margin-top:10px"><div class="mq-check">Produzione del giorno</div><div class="mq-check">Caricato rispetto al prescritto</div><div class="mq-check">Arrivi rispetto al previsto</div><div class="mq-check att">Scadenza in arrivo</div></div></div><div><span class="mq-pill info">Inviato alla proprietà</span></div></div></div></div><div class="mq-chip c2"><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg></i><div><b>Carico confermato</b><span>In linea con il piano</span></div></div><div class="mq-chip c4"><i class="info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></i><div><b>Report inviato</b><span>Alla proprietà, ogni mattina</span></div></div></div>
+  </div>
+</section>
+
 <!-- COME LAVORIAMO -->
 <section class="sec gov">
   <div class="gov-bg"></div>
@@ -349,21 +383,21 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
   </div>
 </section>
 
-<!-- RISULTATI -->
+<!-- POSIZIONAMENTO -->
 <section class="sec perche">
   <div class="sec-in">
-    <div class="lbl">Risultati</div>
-    <h2 class="h2">Cosa troviamo negli impianti</h2>
+    <div class="lbl">Chi siamo</div>
+    <h2 class="h2">Un operatore tecnologico indipendente</h2>
     <div class="perche-row">
       <div>
+        <div class="perche-it reveal"><h3>Non possediamo impianti e non vendiamo tecnologia.</h3><p>Non abbiamo macchinari né impianti da proporre: lavoriamo solo sul risultato dell'impianto e sul costo del metano.</p></div><div class="perche-it reveal"><h3>In tutta Italia, vicini al territorio.</h3><p>Una struttura nazionale con un network regionale. Sede legale a Isernia, uffici a Firenze.</p></div><div class="perche-it reveal"><h3>Da dove veniamo.</h3><p>Il nostro nucleo tecnico viene dall'Oil &amp; Gas e dai grandi gruppi industriali: procedure scritte, responsabilità assegnate, metodo lean.</p></div>
         <div class="perche-it reveal"><div class="res-figure">Tra 150.000 e 500.000 € l'anno</div><p>Analizzando ricetta e approvvigionamento degli impianti, individuiamo tra 150.000 e 500.000 € l'anno di minor costo delle biomasse per impianto.</p></div>
-        <div class="perche-it reveal"><h3>Da costo per tonnellata a costo per metano.</h3><p>In un impianto biogas che abbiamo gestito con nostri operatori in campo, la nuova ricetta riduce il costo delle biomasse da circa 680.000 a circa 360.000 € su base annua.</p><a href="/it/modello.html#caso-studio" class="res-link">Leggi il caso <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div>
-        <div class="perche-it reveal"><h3>Da dove veniamo.</h3><p>Il nostro nucleo tecnico viene dall'Oil &amp; Gas e dai grandi gruppi industriali. Portiamo negli impianti procedure scritte, responsabilità assegnate e metodo lean.</p></div>
         <div class="perche-box reveal"><p>Vendiamo processi industriali,<br>non ore di consulenza.</p></div>
+        <a href="/it/chi-siamo.html" class="res-link" style="margin-top:20px">Chi siamo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
       </div>
       <div class="perche-vis reveal">
         <img src="../assets/img/sala-controllo.jpg" width="1200" height="800" alt="Sala controllo di un impianto" loading="lazy">
-        <div class="perche-vis-cap">Operativi dal 2023. Sede legale a Isernia, uffici a Firenze.</div>
+        <div class="perche-vis-cap">Operativi dal 2023.</div>
       </div>
     </div>
   </div>
@@ -473,9 +507,9 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
     <h2 class="h2">FAR.E Group in breve</h2>
     <div class="faq-list">
       <details><summary>Che cosa fa FAR.E Group?</summary><p>FAR.E Group è un gruppo italiano che aiuta proprietari, fondi e sviluppatori a gestire impianti di biogas e biometano. Si occupa di biomasse e ricetta del digestore (feedstock management), di gestione operativa degli impianti per conto della proprietà, di project management e consulenza tecnica e contrattuale, e sviluppa la piattaforma Methan.IQ.</p></details>
-      <details><summary>Dove opera FAR.E Group?</summary><p>In Italia. FAR.E Group ha sede legale a Isernia e uffici a Firenze, e lavora su impianti in Lombardia, Lazio ed Emilia-Romagna.</p></details>
+      <details><summary>Dove opera FAR.E Group?</summary><p>In tutta Italia, con un network regionale che ci tiene vicini agli impianti. FAR.E Group ha sede legale a Isernia e uffici a Firenze.</p></details>
       <details><summary>Quali società fanno parte di FAR.E Group?</summary><p>FAR.E Group riunisce FAR.E Energy, che gestisce impianti per conto della proprietà, e FAR.E Services, che si occupa di consulenza tecnica e contrattuale, feedstock management, project management e dello sviluppo di Methan.IQ.</p></details>
-      <details><summary>FAR.E Group possiede impianti?</summary><p>No. FAR.E Energy gestisce impianti per conto dei proprietari e non possiede impianti propri.</p></details>
+      <details><summary>FAR.E Group possiede impianti o vende tecnologia?</summary><p>No. FAR.E Group è un operatore tecnologico indipendente: non possiede impianti e non vende impianti né macchinari. FAR.E Energy gestisce impianti per conto dei proprietari.</p></details>
       <details><summary>Cos'è il feedstock management?</summary><p>È la gestione delle biomasse che alimentano il digestore: scelta delle matrici, contratti di fornitura, qualità in ingresso e ricetta. FAR.E Group la valuta sul costo per metro cubo di metano prodotto, non sul prezzo a tonnellata. Analizzando ricetta e approvvigionamento individuiamo tra 150.000 e 500.000 € l'anno di minor costo delle biomasse per impianto.</p></details>
       <details><summary>Cos'è Methan.IQ?</summary><p>Methan.IQ è la piattaforma con cui gli operatori registrano dal telefono carichi, arrivi e controlli, mentre la proprietà riceve ogni giorno un report sull'impianto. È disponibile in abbonamento mensile per impianto, anche per chi gestisce l'impianto in autonomia.</p></details>
       <details><summary>FAR.E Group sostituisce il team dell'impianto?</summary><p>No. Lavoriamo con la proprietà e con il team dell'impianto: il campo esegue procedure definite, la proprietà e l'asset manager decidono sulla base dei numeri.</p></details>

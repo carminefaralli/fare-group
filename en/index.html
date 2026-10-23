@@ -50,7 +50,7 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
       "legalName": "FAR.E. Group S.r.l.",
       "url": "https://www.fare-group.com/",
       "logo": "https://www.fare-group.com/assets/img/logo-color.png",
-      "description": "Italian group that supports owners, funds and developers in running biogas and biomethane plants: feedstock management, plant operations on behalf of owners, project management, technical and contract advisory and the Methan.IQ platform.",
+      "description": "Independent Italian technology operator (it does not own plants or sell technology) that supports owners, funds and developers in running biogas and biomethane plants: feedstock management, plant operations on behalf of owners, project management, technical and contract advisory and the Methan.IQ platform.",
       "taxID": "01017870948",
       "vatID": "IT01017870948",
       "address": {
@@ -78,6 +78,7 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
         "@type": "Country",
         "name": "Italy"
       },
+      "slogan": "We lower the production cost of methane",
       "knowsAbout": [
         "biogas",
         "biomethane",
@@ -153,6 +154,14 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "See the answer",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At a biogas plant we ran, some feedstocks that looked cheap had very low yields: at the same price, their methane cost up to ten times more. We redesigned the recipe starting from the cost per cubic metre of methane."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What does FAR.E Group do?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -164,7 +173,7 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
           "name": "Where does FAR.E Group operate?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "In Italy. FAR.E Group has its registered office in Isernia and offices in Florence, and works on plants in Lombardy, Lazio and Emilia-Romagna."
+            "text": "Across Italy, with a regional network that keeps us close to the plants. FAR.E Group has its registered office in Isernia and offices in Florence."
           }
         },
         {
@@ -177,10 +186,10 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
         },
         {
           "@type": "Question",
-          "name": "Does FAR.E Group own plants?",
+          "name": "Does FAR.E Group own plants or sell technology?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. FAR.E Energy runs plants on behalf of their owners and does not own any plants."
+            "text": "No. FAR.E Group is an independent technology operator: it does not own plants and does not sell plants or equipment. FAR.E Energy runs plants on behalf of their owners."
           }
         },
         {
@@ -220,6 +229,7 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
   ]
 }
 </script>
+<link rel="stylesheet" href="../assets/css/methaniq.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -234,32 +244,42 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
 <section class="hero">
   <div class="hero-bg" style="background-image:url('../assets/img/biodigestore-hero.jpg')"></div>
   <div class="hero-grad"></div>
-  <div class="hero-in">
+  <div class="hero-in solo">
     <div class="hero-txt">
-      <div class="hero-tag">Biogas and biomethane in Italy</div>
-      <h1>
-        We lower the cost of methane in biogas and biomethane plants.
-        <em>Together with the owners and the plant team.</em>
-      </h1>
-      <p class="hero-sub">FAR.E Group supports owners, funds and developers in running their plants. We select and control the feedstock, organise field work with clear procedures and measure what each cubic metre of methane really costs. With Methan.IQ, our platform, every load stays on record.</p>
+      <div class="hero-tag">Biogas and biomethane, across Italy</div>
+      <h1 class="big">We lower the production cost of methane.<em>Together with the owners and the plant team.</em></h1>
+      <p class="hero-sub">FAR.E Group is an independent technology operator: we work on feedstock, recipe and field operations, and we measure what each cubic metre of methane really costs. Up to €500,000 a year in savings identified on the recipe of a single plant.</p>
       <div class="hero-btns">
-        <a href="/en/contact.html" class="b b-g">Let's review your plant <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-        <a href="/en/methaniq.html" class="b b-o">Discover Methan.IQ</a>
+        <a href="/en/contact.html" class="b b-g">Let's review your plant <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <a href="#case" class="b b-o">See a case</a>
       </div>
-    </div>
-    <div class="hero-stats">
-      <div class="h-stat"><span class="n">20</span><span class="l">Projects and plants our team has worked on</span></div>
-      <div class="h-stat"><span class="n">9</span><span class="l">Plants we follow today in feedstock management: 6 operating, 3 in development</span></div>
-      <div class="h-stat"><span class="n">1</span><span class="l">Biogas plant run end to end, from the feedstock yard to maintenance, with our own operators on site</span></div>
-      <div class="h-stat"><span class="n">1,000<small>Sm³/h</small></span><span class="l">The largest plant we follow in project management</span></div>
+      <div class="hero-entry"><div class="hero-entry-lbl">Where do you want to start?</div><div class="hero-entry-row"><a href="#case"><b>Feedstock cost</b><span>Recipe and supply contracts, judged on methane produced.</span><em>See the case &rarr;</em></a><a href="/en/methaniq.html"><b>Field operations</b><span>Procedures and control of every load, from a phone.</span><em>Discover Methan.IQ &rarr;</em></a><a href="/en/services.html#projects"><b>A new project</b><span>Project management and technical and contract advisory.</span><em>See the services &rarr;</em></a></div></div>
     </div>
   </div>
 </section>
 
-<!-- TENSION STRIP -->
-<div class="tension">
-  <p>What does a cubic metre of methane really cost you?</p>
-</div>
+<!-- FATTI -->
+<div class="facts"><div class="facts-in"><div class="fact"><div class="n">20</div><div class="l">Projects and plants our team has worked on</div></div><div class="fact"><div class="n">9</div><div class="l">Plants we follow today in feedstock management: 6 operating, 3 in development</div></div><div class="fact"><div class="n">1</div><div class="l">Biogas plant run end to end, from the feedstock yard to maintenance, with our own operators on site</div></div><div class="fact"><div class="n">1,000<small>Sm³/h</small></div><div class="l">The largest plant we follow in project management</div></div></div></div>
+
+<!-- CASO IN ANTEPRIMA -->
+<section class="sec teaser" id="case">
+  <div class="sec-in">
+    <div class="lbl">A real case</div>
+    <div class="teaser-lay">
+      <div class="reveal">
+        <p class="teaser-q">A feedstock is cheap per tonne.<br>And per cubic metre of methane?</p>
+        <details><summary>See the answer</summary><p>At a biogas plant we ran, some feedstocks that looked cheap had very low yields: at the same price, their methane cost up to ten times more. We redesigned the recipe starting from the cost per cubic metre of methane.</p></details>
+      </div>
+      <div class="teaser-bars reveal">
+        <h3>Feedstock cost, on an annual basis</h3>
+        <div class="tb-row"><div class="tb-lbl"><span>Previous recipe</span><b>about €680,000</b></div><div class="tb-track"><span style="--w:100%;--c:#C9873A"></span></div></div>
+        <div class="tb-row"><div class="tb-lbl"><span>New recipe</span><b>about €360,000</b></div><div class="tb-track"><span style="--w:53%;--c:var(--green)"></span></div></div>
+        <p class="tb-cap">Same plant, different recipe: about €320,000 less, with an average methane cost of around €0.15/Nm³.</p>
+        <a href="/en/model.html#case-study" class="res-link">Read the full case <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- PROBLEM -->
 <section class="sec prob">
@@ -332,6 +352,20 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
   </div>
 </section>
 
+<!-- METHAN.IQ -->
+<section class="mq mq-teaser">
+  <div class="mq-wrap mq-teaser-grid">
+    <div class="reveal">
+      <div class="mq-eyebrow">Methan.IQ</div>
+      <h2>The method, in the pocket<br>of those in the field.</h2>
+      <p class="mq-lead">The platform we use on plants, also available to plants that run themselves. The field follows defined procedures, the asset manager governs with numbers every day.</p>
+      <ul><li>Guided loading and feedstock certifiability check</li><li>Deliveries against forecast and stock with a 7-day alert</li><li>Daily email report to the owners</li><li>Simulator: theoretical and measured production</li></ul>
+      <div class="mq-btns"><a href="/en/methaniq.html" class="mq-btn mq-btn-main">Discover Methan.IQ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div>
+    </div>
+    <div class="mq-hero-stage" aria-hidden="true"><div class="mq-phone" data-active="4" aria-hidden="true"><div class="mq-screen"><div class="mq-scr" data-s="1"><div class="mq-scr-top"><div><div class="mq-scr-sub">Guided loading</div><div class="mq-scr-title">Today's loading</div></div><div class="mq-avatar"></div></div><div class="mq-card"><div class="mq-row"><span>Feedstock A</span><span class="mq-pill ok">On plan</span></div><div class="mq-bar"><span style="--w:82%;--c:var(--mq-green)"></span></div><div class="mq-row"><span>Feedstock B</span><span class="mq-pill info">Done</span></div><div class="mq-bar"><span style="--w:100%;--c:var(--mq-teal)"></span></div><div class="mq-row"><span>Feedstock C</span><span class="mq-pill warn">In progress</span></div><div class="mq-bar"><span style="--w:45%;--c:var(--mq-amber)"></span></div></div><div class="mq-cta-fake">Confirm loading</div></div><div class="mq-scr" data-s="2"><div class="mq-scr-top"><div><div class="mq-scr-sub">Delivery</div><div class="mq-scr-title">New arrival</div></div><div class="mq-avatar"></div></div><div class="mq-card"><div class="mq-row"><span>Supplier</span><span class="mq-bar" style="width:46%;margin:0"><span style="--w:100%;--c:rgba(255,255,255,.22)"></span></span></div><div class="mq-row"><span>Feedstock</span><span class="mq-bar" style="width:46%;margin:0"><span style="--w:100%;--c:rgba(255,255,255,.22)"></span></span></div><div class="mq-row"><span>Bunker</span><span class="mq-bar" style="width:46%;margin:0"><span style="--w:100%;--c:rgba(255,255,255,.22)"></span></span></div></div><div class="mq-alert"><b>Feedstock not in the plan</b><p>Explicit confirmation is required to proceed. The choice is recorded.</p></div><div class="mq-two"><div>Confirm and record</div><div>Cancel</div></div></div><div class="mq-scr" data-s="3"><div class="mq-scr-top"><div><div class="mq-scr-sub">This week</div><div class="mq-scr-title">Deliveries and stock</div></div><div class="mq-avatar"></div></div><div class="mq-card"><div class="mq-chart"><div><i style="--h:70%"></i><i style="--h:62%"></i></div><div><i style="--h:80%"></i><i style="--h:74%"></i></div><div><i style="--h:55%"></i><i style="--h:40%"></i></div><div><i style="--h:66%"></i><i style="--h:70%"></i></div><div><i style="--h:48%"></i><i style="--h:52%"></i></div><div><i style="--h:72%"></i><i style="--h:76%"></i></div><div><i style="--h:60%"></i><i style="--h:58%"></i></div></div><div class="mq-legend" style="margin-top:10px"><span>Planned</span><span>Arrived</span></div></div><div><span class="mq-pill warn">Coverage below 7 days</span></div><div><span class="mq-pill ok">Feedstock A on plan</span></div></div><div class="mq-scr" data-s="4"><div class="mq-scr-top"><div><div class="mq-scr-sub">Every morning</div><div class="mq-scr-title">Daily report</div></div><div class="mq-avatar"></div></div><div class="mq-card"><div class="mq-mail-head"><div class="mq-mail-ico"></div><div><b>Methan.IQ</b><div class="mq-scr-sub">Yesterday's summary</div></div></div><div style="margin-top:10px"><div class="mq-check">Daily production</div><div class="mq-check">Loaded against prescribed</div><div class="mq-check">Deliveries against forecast</div><div class="mq-check att">Deadline coming up</div></div></div><div><span class="mq-pill info">Sent to the owners</span></div></div></div></div><div class="mq-chip c2"><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg></i><div><b>Loading confirmed</b><span>On plan</span></div></div><div class="mq-chip c4"><i class="info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></i><div><b>Report sent</b><span>To the owners, every morning</span></div></div></div>
+  </div>
+</section>
+
 <!-- HOW WE WORK -->
 <section class="sec gov">
   <div class="gov-bg"></div>
@@ -349,21 +383,21 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
   </div>
 </section>
 
-<!-- RESULTS -->
+<!-- POSIZIONAMENTO -->
 <section class="sec perche">
   <div class="sec-in">
-    <div class="lbl">Results</div>
-    <h2 class="h2">What we find in plants</h2>
+    <div class="lbl">About us</div>
+    <h2 class="h2">An independent technology operator</h2>
     <div class="perche-row">
       <div>
+        <div class="perche-it reveal"><h3>We do not own plants and we do not sell technology.</h3><p>We have no equipment or plants to push: we work only on the plant's results and on the cost of methane.</p></div><div class="perche-it reveal"><h3>Across Italy, close to the territory.</h3><p>A national organisation with a regional network. Registered office in Isernia, offices in Florence.</p></div><div class="perche-it reveal"><h3>Where we come from.</h3><p>Our technical core comes from Oil &amp; Gas and large industrial groups: written procedures, assigned responsibilities, lean methods.</p></div>
         <div class="perche-it reveal"><div class="res-figure">€150,000 to €500,000 a year</div><p>By reviewing plant recipes and procurement, we identify between €150,000 and €500,000 per year in lower feedstock cost per plant.</p></div>
-        <div class="perche-it reveal"><h3>From cost per tonne to cost per methane.</h3><p>At a biogas plant we ran with our own operators on site, the new recipe reduces feedstock cost from about €680,000 to about €360,000 on an annual basis.</p><a href="/en/model.html#case-study" class="res-link">Read the case <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div>
-        <div class="perche-it reveal"><h3>Where we come from.</h3><p>Our technical core comes from Oil &amp; Gas and large industrial groups. We bring written procedures, assigned responsibilities and lean methods to the plants.</p></div>
         <div class="perche-box reveal"><p>We sell industrial processes,<br>not consulting hours.</p></div>
+        <a href="/en/about.html" class="res-link" style="margin-top:20px">About us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
       </div>
       <div class="perche-vis reveal">
         <img src="../assets/img/sala-controllo.jpg" width="1200" height="800" alt="Plant control room" loading="lazy">
-        <div class="perche-vis-cap">Operating since 2023. Registered office in Isernia, offices in Florence.</div>
+        <div class="perche-vis-cap">Operating since 2023.</div>
       </div>
     </div>
   </div>
@@ -473,9 +507,9 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
     <h2 class="h2">FAR.E Group at a glance</h2>
     <div class="faq-list">
       <details><summary>What does FAR.E Group do?</summary><p>FAR.E Group is an Italian group that helps owners, funds and developers run biogas and biomethane plants. It covers feedstock and digester recipe (feedstock management), plant operations on behalf of the owners, project management and technical and contract advisory, and it develops the Methan.IQ platform.</p></details>
-      <details><summary>Where does FAR.E Group operate?</summary><p>In Italy. FAR.E Group has its registered office in Isernia and offices in Florence, and works on plants in Lombardy, Lazio and Emilia-Romagna.</p></details>
+      <details><summary>Where does FAR.E Group operate?</summary><p>Across Italy, with a regional network that keeps us close to the plants. FAR.E Group has its registered office in Isernia and offices in Florence.</p></details>
       <details><summary>Which companies make up FAR.E Group?</summary><p>FAR.E Group brings together FAR.E Energy, which runs plants on behalf of their owners, and FAR.E Services, which provides technical and contract advisory, feedstock management, project management and develops Methan.IQ.</p></details>
-      <details><summary>Does FAR.E Group own plants?</summary><p>No. FAR.E Energy runs plants on behalf of their owners and does not own any plants.</p></details>
+      <details><summary>Does FAR.E Group own plants or sell technology?</summary><p>No. FAR.E Group is an independent technology operator: it does not own plants and does not sell plants or equipment. FAR.E Energy runs plants on behalf of their owners.</p></details>
       <details><summary>What is feedstock management?</summary><p>It is the management of the biomass that feeds the digester: choice of feedstock, supply contracts, incoming quality and recipe. FAR.E Group judges it on the cost per cubic metre of methane produced, not on the price per tonne. By reviewing recipe and procurement we identify between €150,000 and €500,000 per year in lower feedstock cost per plant.</p></details>
       <details><summary>What is Methan.IQ?</summary><p>Methan.IQ is the platform operators use to record loads, deliveries and checks from a phone, while the owners receive a daily report on the plant. It is available as a monthly subscription per plant, including for plants that run their own operations.</p></details>
       <details><summary>Does FAR.E Group replace the plant team?</summary><p>No. We work with the owners and the plant team: the field follows defined procedures, the owners and the asset manager decide based on the numbers.</p></details>

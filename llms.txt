@@ -1,8 +1,8 @@
 # FAR.E Group
 
-> FAR.E Group è un gruppo italiano che affianca proprietari, fondi e sviluppatori nella gestione di impianti di biogas e biometano: feedstock management (biomasse e ricetta del digestore), gestione operativa degli impianti per conto della proprietà, project management e consulenza tecnica e contrattuale, e la piattaforma Methan.IQ. Operativo dal 2023. Sede legale a Isernia, uffici a Firenze. Lavora su impianti in Lombardia, Lazio ed Emilia-Romagna.
+> FAR.E Group è un gruppo italiano che affianca proprietari, fondi e sviluppatori nella gestione di impianti di biogas e biometano: feedstock management (biomasse e ricetta del digestore), gestione operativa degli impianti per conto della proprietà, project management e consulenza tecnica e contrattuale, e la piattaforma Methan.IQ. È un operatore tecnologico indipendente: non possiede impianti e non vende tecnologia. Opera in tutta Italia con un network regionale. Operativo dal 2023. Sede legale a Isernia, uffici a Firenze.
 
-FAR.E Group (also written "FARE Group") is an Italian group that supports owners, funds and developers in running biogas and biomethane plants.
+FAR.E Group (also written "FARE Group") is an independent Italian technology operator that supports owners, funds and developers in running biogas and biomethane plants.
 
 ## Fatti chiave
 
