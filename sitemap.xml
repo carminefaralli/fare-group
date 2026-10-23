@@ -5,12 +5,14 @@
   <!-- Home -->
   <url>
     <loc>https://www.fare-group.com/it/</loc>
+    <lastmod>2026-10-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/"/>
   </url>
   <url>
     <loc>https://www.fare-group.com/en/</loc>
+    <lastmod>2026-10-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/"/>
@@ -19,12 +21,14 @@
   <!-- Chi siamo / About -->
   <url>
     <loc>https://www.fare-group.com/it/chi-siamo.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/chi-siamo.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/about.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/about.html"/>
   </url>
   <url>
     <loc>https://www.fare-group.com/en/about.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/chi-siamo.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/about.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/about.html"/>
@@ -33,12 +37,14 @@
   <!-- Contatti / Contact -->
   <url>
     <loc>https://www.fare-group.com/it/contatti.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/contatti.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/contact.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/contact.html"/>
   </url>
   <url>
     <loc>https://www.fare-group.com/en/contact.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/contatti.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/contact.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/contact.html"/>
@@ -47,12 +53,14 @@
   <!-- Servizi / Services -->
   <url>
     <loc>https://www.fare-group.com/it/servizi.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/servizi.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/services.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/services.html"/>
   </url>
   <url>
     <loc>https://www.fare-group.com/en/services.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/servizi.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/services.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/services.html"/>
@@ -61,12 +69,14 @@
   <!-- Modello / Model -->
   <url>
     <loc>https://www.fare-group.com/it/modello.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/modello.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/model.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/model.html"/>
   </url>
   <url>
     <loc>https://www.fare-group.com/en/model.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/modello.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/model.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/model.html"/>
@@ -75,12 +85,14 @@
   <!-- Methan.IQ -->
   <url>
     <loc>https://www.fare-group.com/it/methaniq.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/methaniq.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/methaniq.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/methaniq.html"/>
   </url>
   <url>
     <loc>https://www.fare-group.com/en/methaniq.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/methaniq.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/methaniq.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/methaniq.html"/>
