@@ -19,12 +19,14 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Servizi — FAR.E. Group</title>
-<meta name="description" content="I servizi FAR.E. sono progettati per governare l'intero sistema impiantistico: gestione impianti, biomasse e ricette, sviluppo progetti, digital e AI.">
-<meta property="og:title" content="Servizi — FAR.E. Group">
-<meta property="og:description" content="Gestione impianti, biomasse, sviluppo progetti e digital: un sistema integrato.">
+<title>Servizi per impianti di biogas e biometano | FAR.E Group</title>
+<meta name="description" content="Feedstock management, gestione operativa per conto della proprietà, project management e consulenza tecnica e contrattuale, piattaforma Methan.IQ. I servizi di FAR.E Group per impianti di biogas e biometano.">
+<meta property="og:title" content="Servizi per impianti di biogas e biometano | FAR.E Group">
+<meta property="og:description" content="Feedstock management, gestione operativa per conto della proprietà, project management e consulenza tecnica e contrattuale, piattaforma Methan.IQ. I servizi di FAR.E Group per impianti di biogas e biometano.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.fare-group.com/it/servizi.html">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="FAR.E Group">
 <meta property="og:image" content="https://www.fare-group.com/assets/img/og-cover.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -36,32 +38,90 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.fare-group.com/it/"
+      "@type": "Organization",
+      "@id": "https://www.fare-group.com/#organization",
+      "name": "FAR.E Group",
+      "alternateName": [
+        "FARE Group",
+        "Fare Group"
+      ],
+      "url": "https://www.fare-group.com/",
+      "logo": "https://www.fare-group.com/assets/img/logo-color.png"
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Servizi",
-      "item": "https://www.fare-group.com/it/servizi.html"
+      "@type": "Organization",
+      "@id": "https://www.fare-group.com/#fare-energy",
+      "name": "FAR.E Energy",
+      "legalName": "FAR.E. Energy S.r.l."
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.fare-group.com/#fare-services",
+      "name": "FAR.E Services",
+      "legalName": "FAR.E. Services S.r.l."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.fare-group.com/it/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Servizi",
+          "item": "https://www.fare-group.com/it/servizi.html"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.fare-group.com/it/servizi.html#feedstock",
+      "name": "Feedstock management per impianti di biogas e biometano",
+      "serviceType": "Feedstock management",
+      "description": "Analisi di ricetta e approvvigionamento, contratti di fornitura, qualità in ingresso e ricetta del digestore valutata sul costo per metro cubo di metano.",
+      "provider": {
+        "@id": "https://www.fare-group.com/#fare-services"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Italia"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.fare-group.com/it/servizi.html#gestione",
+      "name": "Gestione operativa di impianti di biogas per conto della proprietà",
+      "serviceType": "Gestione operativa di impianti",
+      "description": "Conduzione dell'impianto per conto della proprietà: operatori con procedure standard, piazzale e carichi tracciati, manutenzione preventiva.",
+      "provider": {
+        "@id": "https://www.fare-group.com/#fare-energy"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Italia"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.fare-group.com/it/servizi.html#progetti",
+      "name": "Project management e consulenza tecnica e contrattuale per impianti di biometano",
+      "serviceType": "Project management",
+      "description": "Coordinamento di fornitori e attività e supporto tecnico e contrattuale per impianti di biogas e biometano.",
+      "provider": {
+        "@id": "https://www.fare-group.com/#fare-services"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Italia"
+      }
     }
   ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Servizi — FAR.E. Group",
-  "description": "I servizi FAR.E. sono progettati per governare l'intero sistema impiantistico: gestione impianti, biomasse e ricette, sviluppo progetti, digital e AI.",
-  "provider": {
-    "@id": "https://www.fare-group.com/#organization"
-  }
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,65 +132,66 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
 <body>
 
 <div class="topbar"><a href="/assets/Codice_Etico_FAR.E.pdf" target="_blank" rel="noopener">Codice Etico</a><a href="https://whistlesblow.it/c/fare-societa-a-responsabilita-limitata-semplificata/2" target="_blank" rel="noopener">Segnalazioni</a><a href="https://www.iubenda.com/privacy-policy/86666832" target="_blank" rel="noopener">Privacy</a><div class="lang"><a href="/it/servizi.html" class="on">IT</a><a href="/en/services.html">EN</a></div></div>
-<nav class="nav"><a href="/it/" class="nav-logo"><img src="../assets/img/logo-color.png" alt="FAR.E. Group" width="845" height="379"></a><button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button><div class="nav-r"><a href="/it/">Home</a><a href="/it/modello.html">Modello</a><a href="/it/servizi.html" class="on">Servizi</a><a href="/it/tech.html">Tech</a><a href="/it/chi-siamo.html">Chi siamo</a><a href="/it/contatti.html">Contatti</a></div></nav>
+<nav class="nav"><a href="/it/" class="nav-logo"><img src="../assets/img/logo-color.png" alt="FAR.E Group" width="845" height="379"></a><button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button><div class="nav-r"><a href="/it/">Home</a><a href="/it/modello.html">Modello</a><a href="/it/servizi.html" class="on">Servizi</a><a href="/it/methaniq.html">Methan.IQ</a><a href="/it/chi-siamo.html">Chi siamo</a><a href="/it/contatti.html">Contatti</a></div></nav>
 
-<section class="page-hero"><div class="page-hero-bg"></div><div class="page-hero-grad"></div><div class="page-hero-in"><div class="bc"><a href="/it/">Home</a> <span>/</span> Servizi</div><h1>Servizi</h1><p class="hl">I servizi FAR.E. sono progettati per governare l'intero sistema impiantistico, non singole attività.</p></div></section>
+<section class="page-hero"><div class="page-hero-bg"></div><div class="page-hero-grad"></div><div class="page-hero-in"><div class="bc"><a href="/it/">Home</a> <span>/</span> Servizi</div><h1>Servizi</h1><p class="hl">Cosa possiamo fare per il tuo impianto di biogas o biometano. Un singolo servizio o tutti insieme, sempre a fianco della proprietà.</p></div></section>
 
 <!-- STATEMENT -->
-<div class="statement"><div class="statement-in"><div class="statement-box"><div class="statement-bar"></div><div><p><strong>Interveniamo su un sistema industriale.</strong> Ogni componente che segue è parte di un modello integrato, non un servizio isolato.</p><p style="font-size:17px;color:rgba(255,255,255,.8);margin-top:16px;font-style:italic;font-weight:300">Il nostro obiettivo è creare valore governando il sistema. Perché la maggior parte degli impianti perde marginalità ogni giorno per mancanza di controllo industriale.</p></div></div></div></div>
+<div class="statement"><div class="statement-in"><div class="statement-box"><div class="statement-bar"></div><div><p><strong>Un obiettivo comune: produrre metano a un costo più basso.</strong> Ogni servizio che segue lavora su una parte di questo costo.</p><p style="font-size:17px;color:rgba(255,255,255,.8);margin-top:16px;font-style:italic;font-weight:300">Lavoriamo con la proprietà e con il team dell'impianto: noi portiamo metodo, strumenti e controllo dei numeri, le decisioni restano a chi possiede l'impianto.</p></div></div></div></div>
 
 <!-- SERVIZIO 1 -->
-<section class="svc"><div class="svc-in">
-  <div class="svc-text">
-    <h2>Gestione impianti</h2>
-    <div class="svc-sub">Controllo operativo e gestione industriale dell'impianto</div>
-    <p>Gestiamo l'impianto come un asset industriale, non come un'infrastruttura agricola. Ogni decisione operativa è strutturata, ogni parametro è monitorato, ogni anomalia è gestita prima che diventi un problema.</p>
-    <ul class="svc-list"><li>Monitoraggio performance continuo</li><li>Coordinamento attività operative</li><li>Manutenzione programmata e predittiva</li><li>Gestione anomalie e interventi</li><li>Reporting e KPI</li></ul>
+<section class="svc" id="feedstock"><div class="svc-in">
+  <div class="svc-text reveal">
+    <h2>Biomasse e ricetta</h2>
+    <div class="svc-sub">Feedstock management</div>
+    <p>Analizziamo cosa entra nel digestore, quanto costa e quanto metano produce davvero. Poi riprogettiamo ricetta e approvvigionamento per abbassare il costo per metro cubo di metano. Analizzando ricetta e approvvigionamento degli impianti, individuiamo tra 150.000 e 500.000 € l'anno di minor costo delle biomasse per impianto.</p>
+    <ul class="svc-list"><li>Analisi di ricetta e contratti di fornitura</li><li>Ricetta progettata sul costo per metro cubo di metano</li><li>Selezione dei fornitori e controllo qualità in ingresso</li><li>Logistica e tracciabilità dei conferimenti</li><li>Oggi seguiamo 9 impianti: 6 operativi e 3 in sviluppo</li></ul>
   </div>
-  <div class="svc-visual"><img src="../assets/img/gestione-impianti.jpg" width="1200" height="800" alt="Gestione impianti" loading="lazy"></div>
+  <div class="svc-visual"><img src="../assets/img/campo-biomasse.jpg" width="800" height="450" alt="Biomasse per impianti di biogas" loading="lazy"></div>
 </div></section>
 
 <!-- SERVIZIO 2 -->
-<section class="svc" style="background:var(--bg)"><div class="svc-in">
-  <div class="svc-visual"><img src="../assets/img/campo-biomasse.jpg" width="800" height="450" alt="Biomasse" loading="lazy"></div>
-  <div class="svc-text">
-    <h2>Biomasse & Ricette</h2>
-    <div class="svc-sub">Gestione della supply chain e ottimizzazione della dieta del digestore</div>
-    <p>Non compriamo biomasse — ne governiamo la qualità e il valore. Ogni contratto è basato sul valore energetico reale, non sul tonnellaggio. Ogni ricetta è ottimizzata per massimizzare la produzione di metano al minor costo.</p>
-    <ul class="svc-list"><li>Selezione e qualifica fornitori</li><li>Controllo qualità in ingresso</li><li>Gestione contratti e logistica</li><li>Ottimizzazione ricette biologiche</li><li>Riduzione costo reale per Nm³ CH₄</li></ul>
+<section class="svc" id="gestione" style="background:var(--bg)"><div class="svc-in">
+  <div class="svc-visual"><img src="../assets/img/gestione-impianti.jpg" width="1200" height="800" alt="Gestione operativa di un impianto" loading="lazy"></div>
+  <div class="svc-text reveal">
+    <h2>Gestione operativa</h2>
+    <div class="svc-sub">Conduzione dell'impianto per conto della proprietà</div>
+    <p>Conduciamo l'impianto per conto di chi lo possiede, con procedure standard e responsabilità chiare. Siamo un operatore indipendente: non possediamo impianti e non vendiamo tecnologia. Lavoriamo per la proprietà, con un report ogni giorno.</p>
+    <ul class="svc-list"><li>Operatori in campo con procedure standard</li><li>Piazzale, carico e magazzino biomasse</li><li>Ogni carico tracciato in Methan.IQ</li><li>Manutenzione preventiva con piano trimestrale</li><li>Ricambi critici a scorta e procedure di emergenza</li></ul>
+    <a href="/it/modello.html#caso-studio" class="svc-link">Leggi il caso studio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
   </div>
 </div></section>
 
 <!-- SERVIZIO 3 -->
-<section class="svc"><div class="svc-in">
-  <div class="svc-text">
-    <h2>Sviluppo Progetti & Origination</h2>
-    <div class="svc-sub">Individuazione, sviluppo e strutturazione di opportunità di investimento</div>
-    <p>Non analizziamo progetti. Li identifichiamo, li strutturiamo e li portiamo a maturità. Operiamo a monte del ciclo industriale, dove si crea il valore: nella selezione delle opportunità, nella costruzione delle basi autorizzative e nella definizione di asset investibili.</p>
-    <ul class="svc-list"><li>Identificazione opportunità di investimento</li><li>Sviluppo pipeline progetti</li><li>Supporto autorizzativo</li><li>Strutturazione tecnica ed economica</li><li>Allineamento con investitori</li></ul>
+<section class="svc" id="progetti"><div class="svc-in">
+  <div class="svc-text reveal">
+    <h2>Progetti</h2>
+    <div class="svc-sub">Project management e consulenza tecnica e contrattuale</div>
+    <p>Seguiamo la realizzazione e l'avvio degli impianti e affianchiamo la proprietà nei contratti tecnici. L'impianto più grande che seguiamo in project management ha una capacità di 1.000 Sm³/h.</p>
+    <ul class="svc-list"><li>Coordinamento di fornitori e attività</li><li>Consulenza tecnica sui contratti</li><li>Ricetta e approvvigionamento impostati prima dell'avvio</li><li>Organizzazione del lavoro in campo fin dal primo giorno</li></ul>
   </div>
-  <div class="svc-visual"><img src="../assets/img/sviluppo-progetti.jpg" width="800" height="533" alt="Sviluppo Progetti" loading="lazy"></div>
+  <div class="svc-visual"><img src="../assets/img/sviluppo-progetti.jpg" width="800" height="533" alt="Progetto di impianto di biometano" loading="lazy"></div>
 </div></section>
 
 <!-- SERVIZIO 4 -->
-<section class="svc" style="background:var(--bg)"><div class="svc-in">
-  <div class="svc-visual" style="position:relative"><img src="../assets/img/dashboard-analytics.jpg" width="800" height="533" alt="Digital e AI" loading="lazy"></div>
-  <div class="svc-text">
-    <h2>Digital & AI</h2>
-    <div class="svc-sub">Supporto decisionale e monitoraggio avanzato</div>
-    <p>Non partiamo dalla tecnologia. Partiamo dagli impianti reali. Tutto quello che sviluppiamo nasce da problemi concreti e serve a rendere le decisioni operative più rapide, informate e tracciabili.</p>
-    <ul class="svc-list"><li>Raccolta e integrazione dati</li><li>Analisi performance e anomalie</li><li>Sviluppo modelli predittivi</li><li>Dashboard e reporting</li><li>Evoluzione verso digital twin</li></ul>
-    <a href="/it/tech.html" class="svc-link">Scopri FAR.E. Tech <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+<section class="svc" id="methaniq" style="background:var(--bg)"><div class="svc-in">
+  <div class="svc-visual" style="position:relative"><img src="../assets/img/dashboard-analytics.jpg" width="800" height="533" alt="Piattaforma Methan.IQ" loading="lazy"></div>
+  <div class="svc-text reveal">
+    <h2>Methan.IQ</h2>
+    <div class="svc-sub">La piattaforma per gestire l'impianto dal telefono</div>
+    <p>È lo strumento che usiamo in campo e che offriamo anche a chi gestisce l'impianto in autonomia, con un abbonamento mensile per impianto. Il campo esegue procedure definite, la proprietà riceve ogni giorno un report.</p>
+    <ul class="svc-list"><li>Carico guidato con piano di carico</li><li>Controllo di certificabilità delle biomasse</li><li>Arrivi rispetto al previsto e giacenze</li><li>Report giornaliero via email e report di sostenibilità</li><li>Simulatore: produzione teorica e misurata</li></ul>
+    <a href="/it/methaniq.html" class="svc-link">Scopri Methan.IQ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
   </div>
 </div></section>
 
 <!-- CONNECTION -->
-<div class="connection"><p>Il valore si crea quando queste attività lavorano come <strong>un unico sistema</strong>. Trattarle separatamente significa ottimizzare singoli elementi, non il risultato. Quando lavorano insieme, l'impianto smette di reagire. Inizia a essere <strong>governato</strong>.</p></div>
+<div class="connection"><p>I servizi funzionano anche da soli, ma danno il massimo <strong>insieme</strong>: una ricetta migliore serve a poco se in campo non viene rispettata, e i dati servono solo se arrivano a chi <strong>decide</strong>.</p></div>
 
 <!-- CTA -->
-<section class="cta"><div class="sec-in"><h2 class="h2">Vuoi capire dove si perde margine nel tuo impianto?</h2><p class="cta-sub">Possiamo analizzare insieme il sistema impiantistico e identificare le leve di valore.</p><a href="/it/contatti.html" class="b-w">Analizziamo dove si perde margine <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a href="https://www.youtube.com/@FAR.E.Channel" target="_blank" rel="noopener" class="b-ghost">Guarda FAR.E. Channel</a></div></section>
+<section class="cta"><div class="sec-in"><h2 class="h2">Da quale servizio partiamo?</h2><p class="cta-sub">Raccontaci il tuo impianto: di solito si parte da ricetta e contratti di fornitura, dove il risparmio è più rapido da misurare.</p><a href="/it/contatti.html" class="b-w">Analizziamo il tuo impianto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a href="https://www.youtube.com/@FAR.E.Channel" target="_blank" rel="noopener" class="b-ghost">Guarda FAR.E Channel</a></div></section>
 
-<footer class="ft"><div class="ft-in"><div class="ft-brand"><img src="../assets/img/logo-footer.png" width="176" height="76" alt="FAR.E."><p>Piattaforma industriale per biogas e biometano.</p></div><div><h4>Navigazione</h4><a href="/it/">Home</a><a href="/it/modello.html">Modello</a><a href="/it/servizi.html">Servizi</a><a href="/it/tech.html">Tech</a><a href="/it/chi-siamo.html">Chi siamo</a></div><div><h4>Legal</h4><a href="/assets/Codice_Etico_FAR.E.pdf" target="_blank" rel="noopener">Codice Etico</a><a href="https://whistlesblow.it/c/fare-societa-a-responsabilita-limitata-semplificata/2" target="_blank" rel="noopener">Segnalazioni</a><a href="https://www.iubenda.com/privacy-policy/86666832" target="_blank" rel="noopener" class="iubenda-nostyle iubenda-noiframe iubenda-embed">Privacy Policy</a><a href="https://www.iubenda.com/privacy-policy/86666832/cookie-policy" target="_blank" rel="noopener" class="iubenda-nostyle iubenda-noiframe iubenda-embed">Cookie Policy</a><a href="/it/privacy-attivita-commerciale.html">Privacy attività commerciale</a><a href="/bot">Sistemi automatici</a></div><div><h4>Contatti</h4><a href="mailto:info@fare-group.com">info@fare-group.com</a><a href="https://www.youtube.com/@FAR.E.Channel" target="_blank" rel="noopener">FAR.E. Channel</a><a href="https://www.linkedin.com/company/far-e/" target="_blank" rel="noopener">LinkedIn</a></div></div><div class="ft-bot"><span>&copy; 2026 FAR.E. Group</span></div></footer>
+<footer class="ft"><div class="ft-in"><div class="ft-brand"><img src="../assets/img/logo-footer.png" width="176" height="76" alt="FAR.E Group"><p>FAR.E Group riunisce FAR.E Energy e FAR.E Services: biomasse, gestione operativa, progetti e la piattaforma Methan.IQ per impianti di biogas e biometano.</p></div><div><h4>Navigazione</h4><a href="/it/">Home</a><a href="/it/modello.html">Modello</a><a href="/it/servizi.html">Servizi</a><a href="/it/methaniq.html">Methan.IQ</a><a href="/it/chi-siamo.html">Chi siamo</a></div><div><h4>Legal</h4><a href="/assets/Codice_Etico_FAR.E.pdf" target="_blank" rel="noopener">Codice Etico</a><a href="https://whistlesblow.it/c/fare-societa-a-responsabilita-limitata-semplificata/2" target="_blank" rel="noopener">Segnalazioni</a><a href="https://www.iubenda.com/privacy-policy/86666832" target="_blank" rel="noopener" class="iubenda-nostyle iubenda-noiframe iubenda-embed">Privacy Policy</a><a href="https://www.iubenda.com/privacy-policy/86666832/cookie-policy" target="_blank" rel="noopener" class="iubenda-nostyle iubenda-noiframe iubenda-embed">Cookie Policy</a><a href="/it/privacy-attivita-commerciale.html">Privacy attività commerciale</a><a href="/bot">Sistemi automatici</a></div><div><h4>Contatti</h4><a href="mailto:info@fare-group.com">info@fare-group.com</a><a href="https://www.youtube.com/@FAR.E.Channel" target="_blank" rel="noopener">FAR.E Channel</a><a href="https://www.linkedin.com/company/105126050" target="_blank" rel="noopener">LinkedIn</a></div></div><div class="ft-legal"><p><strong>FAR.E. Group S.r.l.</strong> · Sede legale: Via XXIV Maggio 235, 86170 Isernia (IS) · Uffici: Via Raffaello Lambruschini 38/A, 50134 Firenze (FI) · Registro Imprese del Molise · C.F./P.IVA 01017870948 · REA IS-219096 · Capitale sociale € 20.000,00 i.v. · Società a socio unico · PEC far.e.groupsrl@legalmail.it</p><p><strong>FAR.E. Energy S.r.l.</strong> · Sede legale: Via Raffaello Lambruschini 38/A, 50134 Firenze (FI) · Registro Imprese di Firenze · C.F./P.IVA 07503250487 · REA FI-707977 · Capitale sociale € 10.000,00 i.v. · PEC far.e.energysrl@legalmail.it</p><p><strong>FAR.E. Services S.r.l.</strong> · Sede legale: Via XXIV Maggio 235, 86170 Isernia (IS) · Registro Imprese del Molise · C.F./P.IVA 01001560943 · REA IS-214579 · Capitale sociale € 10.000,00 i.v. · PEC far.e@pec.it</p></div><div class="ft-bot"><span>&copy; 2026 FAR.E Group</span></div></footer>
 <script src="../assets/js/main.js"></script>
 </body>
 </html>

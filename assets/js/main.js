@@ -182,3 +182,53 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 });
+
+/* ── Comparsa dei blocchi allo scroll ── */
+(function() {
+  if (!('IntersectionObserver' in window)) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  document.documentElement.classList.add('js-reveal');
+  document.addEventListener('DOMContentLoaded', function() {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+  });
+})();
+
+/* ── Methan.IQ: lo schermo del telefono segue il passaggio letto, riflesso sulle tessere ── */
+document.addEventListener('DOMContentLoaded', function() {
+  var story = document.querySelector('.mq-story');
+  if (story && 'IntersectionObserver' in window) {
+    var phone = story.querySelector('.mq-phone');
+    var steps = story.querySelectorAll('.mq-step-s');
+    var stepObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (!entry.isIntersecting) return;
+        steps.forEach(function(s) { s.classList.toggle('is-active', s === entry.target); });
+        if (phone) phone.setAttribute('data-active', entry.target.getAttribute('data-step'));
+      });
+    }, { rootMargin: '-45% 0px -45% 0px' });
+    steps.forEach(function(s) { stepObserver.observe(s); });
+  }
+  document.querySelectorAll('.mq-tile').forEach(function(tile) {
+    tile.addEventListener('pointermove', function(e) {
+      var r = tile.getBoundingClientRect();
+      tile.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      tile.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    });
+  });
+});
+
+/* ── Contatti: i pulsanti "Richiedi una demo" arrivano con ?tipo=demo e preselezionano la voce ── */
+document.addEventListener('DOMContentLoaded', function() {
+  var select = document.getElementById('cf-type');
+  if (!select || !/[?&]tipo=demo\b/.test(window.location.search)) return;
+  var demo = Array.prototype.find.call(select.options, function(o) { return /demo/i.test(o.value); });
+  if (demo) select.value = demo.value;
+});
