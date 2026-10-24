@@ -250,10 +250,6 @@
   .mq-hero-grid, .mq-origin-grid, .mq-roles-grid, .mq-plans-grid { grid-template-columns: 1fr; }
   .mq-hero-stage { height: 620px; }
   .mq-story-grid { grid-template-columns: 1fr; gap: 0; }
-  .mq-story-sticky { top: 70px; height: auto; min-height: 0; padding: 24px 0; z-index: 2; background: linear-gradient(180deg, var(--mq-ink) 70%, transparent); }
-  .mq-story-sticky .mq-phone { transform: scale(.62); transform-origin: top center; margin-bottom: -232px; }
-  .mq-steps { padding: 10vh 0; }
-  .mq-step-s { min-height: 48vh; }
   .mq-bento { grid-template-columns: 1fr 1fr; }
   .mq-tile, .mq-tile.wide { grid-column: span 1; }
   .mq-tile.full { grid-column: span 2; grid-template-columns: 1fr; }
@@ -283,3 +279,13 @@
 /* Passaggi attenuati solo quando il JS gestisce l'evidenza: senza JS restano tutti leggibili */
 .js-reveal .mq-step-s { opacity: .28; }
 .js-reveal .mq-step-s.is-active { opacity: 1; }
+
+/* Tablet e telefono: il telefono non resta fisso (il testo gli passava sotto), compare una volta
+   sopra i passaggi; i passaggi sono blocchi normali, tutti in piena evidenza */
+@media (max-width: 1080px) {
+  .mq-story-sticky { position: static; height: auto; min-height: 0; padding: 8px 0 0; }
+  .mq-story-sticky::before { width: 340px; height: 340px; }
+  .mq-story-sticky .mq-phone { transform: scale(.8); transform-origin: top center; margin-bottom: -122px; }
+  .mq-steps { padding: 24px 0 0; }
+  .mq-step-s, .js-reveal .mq-step-s { min-height: 0; padding: 28px 0; border-top: 1px solid var(--mq-line); opacity: 1; }
+}
