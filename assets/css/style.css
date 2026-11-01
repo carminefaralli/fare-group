@@ -1510,6 +1510,9 @@ a { color: inherit; }
 .ft-legal p + p { margin-top: 6px; }
 .ft-legal strong { color: rgba(255,255,255,.8); font-weight: 600; }
 .ft-bot { color: rgba(255,255,255,.62); }
+.ft-bot { flex-wrap: wrap; gap: 8px 24px; }
+.ft-ai { text-align: right; max-width: 760px; }
+@media (max-width: 640px) { .ft-ai { text-align: left; } }
 
 /* Comparsa allo scroll (attivata solo se c'è JS e il visitatore non ha chiesto meno movimento) */
 .js-reveal .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
