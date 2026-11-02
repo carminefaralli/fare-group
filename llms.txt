@@ -17,7 +17,7 @@ FAR.E. Group (also written "FARE Group") is an independent Italian technology op
 ## Methan.IQ
 
 - Piattaforma per la gestione operativa di impianti di biogas e biometano, sviluppata da FAR.E. Services.
-- Funzioni: carico guidato con piano di carico, controllo di certificabilità delle biomasse, arrivi rispetto al previsto, giacenze con avviso di copertura a 7 giorni, performance dell'impianto, report giornaliero via email, report di sostenibilità, simulatore diagnostico (produzione teorica rispetto a misurata), ronde registrate con codice QR.
+- Funzioni: carico guidato con piano di carico, controllo di certificabilità delle biomasse, arrivi rispetto al previsto, giacenze con avviso quando una biomassa sta per finire, performance dell'impianto, report giornaliero via email, report di sostenibilità, simulatore diagnostico (produzione teorica rispetto a misurata), ronde registrate con codice QR.
 - Disponibile anche per impianti che gestiscono in autonomia la propria operatività, con abbonamento mensile per impianto. Prezzo su richiesta, demo disponibile.
 
 ## Pagine

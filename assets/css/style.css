@@ -1546,7 +1546,7 @@ a { color: inherit; }
 .hero-entry a em { font-style: normal; font-size: 12.5px; font-weight: 600; color: var(--green); margin-top: 4px; }
 
 .facts { background: var(--white); border-bottom: 1px solid var(--border); padding: 34px 64px; }
-.facts-in { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.facts-in { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
 .fact { border-left: 2px solid var(--green); padding-left: 16px; }
 .fact .n { font-family: var(--serif); font-size: 30px; color: var(--navy); line-height: 1.1; }
 .fact .n small { font-size: 16px; margin-left: 3px; }
