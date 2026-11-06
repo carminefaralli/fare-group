@@ -119,7 +119,9 @@ for p in tests/smoke-post-deploy.sh tests/seo-static-check.py docs/seo-geo/SEO_G
   [ "$c" = "404" ] && ok "/$p non pubblico (404)" || ko "/$p -> $c (atteso 404: file interno esposto)"
 done
 for u in "/it/" "/en/services.html" "/it/contatti.html"; do
-  curl -s --max-time 20 "$H$u" | head -c 1024 | grep -q '<meta charset="UTF-8">' \
+  # pagina intera in variabile: con pipefail, curl | head -c andrebbe in SIGPIPE sulle pagine grandi
+  page=$(curl -s --max-time 20 "$H$u")
+  [[ "${page:0:1024}" == *'<meta charset="UTF-8">'* ]] \
     && ok "$u charset nei primi 1024 byte" || ko "$u charset assente dai primi 1024 byte"
 done
 
