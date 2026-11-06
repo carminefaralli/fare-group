@@ -145,5 +145,12 @@ sys.exit(0 if visible and visible == schema else 1)
 " && ok "$u FAQ nello schema = FAQ visibili" || ko "$u FAQ nello schema diverse da quelle visibili"
 done
 
+echo "== 15. Chiave IndexNow servita dalla root (serve a Bing per accettare le segnalazioni) =="
+key=$(ls "$(dirname "$0")/.." | grep -E '^[0-9a-f]{32}\.txt$' | head -1)
+if [ -z "$key" ]; then ko "file chiave IndexNow assente dal repo"; else
+  body=$(curl -s --max-time 20 "$H/$key")
+  [ "$body" = "${key%.txt}" ] && ok "/$key -> chiave corretta" || ko "/$key non restituisce la chiave"
+fi
+
 [ $fail -eq 0 ] && echo "RISULTATO: tutti i check PASS" || echo "RISULTATO: almeno un FAIL"
 exit $fail
