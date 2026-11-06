@@ -46,15 +46,25 @@ jobs:
           skip_app_build: true
           github_id_token: ${{ steps.idtoken.outputs.result }}
           ###### End of Repository/Build Configurations ######
-      - name: Segnala a IndexNow (Bing) le pagine cambiate
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        continue-on-error: true
+
+  indexnow_job:
+    # Job separato: l'azione di deploy di Azure lascia la cartella di lavoro senza il repository
+    needs: build_and_deploy_job
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    name: Segnala a IndexNow (Bing) le pagine cambiate
+    continue-on-error: true
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Invia gli URL cambiati
         env:
           BASE_SHA: ${{ github.event.before }}
           HEAD_SHA: ${{ github.sha }}
-        run: |
-          git fetch --no-tags --depth=1 origin "$BASE_SHA" || echo "commit precedente non recuperabile"
-          python3 .github/scripts/indexnow.py "$BASE_SHA" "$HEAD_SHA"
+        run: python3 .github/scripts/indexnow.py "$BASE_SHA" "$HEAD_SHA"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
