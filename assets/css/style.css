@@ -1759,7 +1759,7 @@ a { color: inherit; }
   flex-shrink: 0;
   color: var(--blue);
 }
-.share-item h5 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+.share-item h5, .share-item h4 { font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
 .share-item p { font-size: 13px; color: var(--text-mid); line-height: 1.5; }
 
 /* ══════════════════════════════════════
