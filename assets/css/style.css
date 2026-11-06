@@ -1684,7 +1684,7 @@ a { color: inherit; }
   border: 1px solid var(--border);
   border-radius: 4px;
 }
-.perche-block h4 { font-family: var(--serif); font-size: 20px; font-weight: 400; color: var(--text); margin-bottom: 8px; }
+.perche-block h4, .perche-block h3 { font-family: var(--serif); font-size: 20px; font-weight: 400; color: var(--text); margin-bottom: 8px; }
 .perche-block p { font-size: 14px; line-height: 1.7; color: var(--text-mid); }
 
 /* Visione & Missione */
@@ -1710,7 +1710,7 @@ a { color: inherit; }
 .pilastri .lbl { color: var(--blue); }
 .pilastri .h2 { margin-bottom: 24px; }
 .pilastri .intro-text { max-width: 700px; margin-bottom: 48px; }
-.pilastri .intro-text span { font-family: var(--serif); font-size: 28px; color: var(--yellow); font-weight: 300; display: block; margin-bottom: 24px; }
+.pilastri .intro-text span { font-family: var(--serif); font-size: 28px; color: #B18819; /* giallo del marchio scurito: 3:1 su sfondo chiaro (WCAG AA testo grande) */ font-weight: 300; display: block; margin-bottom: 24px; }
 .pil-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 16px; }
 .pil-card {
   padding: 28px 24px;
@@ -1740,7 +1740,7 @@ a { color: inherit; }
 }
 .share-link:hover { color: var(--green); }
 .share-link svg { width: 16px; height: 16px; }
-.share-visual h4 { font-family: var(--serif); font-size: 20px; font-weight: 400; color: var(--text); margin-bottom: 24px; }
+.share-visual h4, .share-visual h3 { font-family: var(--serif); font-size: 20px; font-weight: 400; color: var(--text); margin-bottom: 24px; }
 .share-item {
   display: flex;
   align-items: flex-start;
@@ -1759,7 +1759,7 @@ a { color: inherit; }
   flex-shrink: 0;
   color: var(--blue);
 }
-.share-item h5 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+.share-item h5, .share-item h4 { font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
 .share-item p { font-size: 13px; color: var(--text-mid); line-height: 1.5; }
 
 /* ══════════════════════════════════════
