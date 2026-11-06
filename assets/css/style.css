@@ -1684,7 +1684,7 @@ a { color: inherit; }
   border: 1px solid var(--border);
   border-radius: 4px;
 }
-.perche-block h4 { font-family: var(--serif); font-size: 20px; font-weight: 400; color: var(--text); margin-bottom: 8px; }
+.perche-block h4, .perche-block h3 { font-family: var(--serif); font-size: 20px; font-weight: 400; color: var(--text); margin-bottom: 8px; }
 .perche-block p { font-size: 14px; line-height: 1.7; color: var(--text-mid); }
 
 /* Visione & Missione */
@@ -1740,7 +1740,7 @@ a { color: inherit; }
 }
 .share-link:hover { color: var(--green); }
 .share-link svg { width: 16px; height: 16px; }
-.share-visual h4 { font-family: var(--serif); font-size: 20px; font-weight: 400; color: var(--text); margin-bottom: 24px; }
+.share-visual h4, .share-visual h3 { font-family: var(--serif); font-size: 20px; font-weight: 400; color: var(--text); margin-bottom: 24px; }
 .share-item {
   display: flex;
   align-items: flex-start;
