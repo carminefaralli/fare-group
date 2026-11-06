@@ -98,4 +98,68 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/methaniq.html"/>
   </url>
 
+  <!-- Gestione operativa e O&M -->
+  <url>
+    <loc>https://www.fare-group.com/it/gestione-operativa-om.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/gestione-operativa-om.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/operations-maintenance.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/operations-maintenance.html"/>
+  </url>
+  <url>
+    <loc>https://www.fare-group.com/en/operations-maintenance.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/gestione-operativa-om.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/operations-maintenance.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/operations-maintenance.html"/>
+  </url>
+
+  <!-- Feedstock management -->
+  <url>
+    <loc>https://www.fare-group.com/it/feedstock-management.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/feedstock-management.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/feedstock-management.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/feedstock-management.html"/>
+  </url>
+  <url>
+    <loc>https://www.fare-group.com/en/feedstock-management.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/feedstock-management.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/feedstock-management.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/feedstock-management.html"/>
+  </url>
+
+  <!-- Project management -->
+  <url>
+    <loc>https://www.fare-group.com/it/project-management.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/project-management.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/project-management.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/project-management.html"/>
+  </url>
+  <url>
+    <loc>https://www.fare-group.com/en/project-management.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/project-management.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/project-management.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/project-management.html"/>
+  </url>
+
+  <!-- Fondi e investitori -->
+  <url>
+    <loc>https://www.fare-group.com/it/fondi-investitori.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/fondi-investitori.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/investors.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/investors.html"/>
+  </url>
+  <url>
+    <loc>https://www.fare-group.com/en/investors.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/fondi-investitori.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/investors.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/investors.html"/>
+  </url>
+
 </urlset>

@@ -5,6 +5,7 @@ Uso: python3 tests/seo-static-check.py   (dalla root del repo). Exit 0 = tutto P
 Verifica sui file del repo ciò che lo smoke post-deploy verifica sul live.
 """
 import glob
+import html
 import json
 import os
 import re
@@ -38,16 +39,16 @@ def url_to_file(url):
     return path.lstrip("/")
 
 
-def visible_faq(html):
-    sec = re.search(r'<section class="(?:sec faq|mq-faq)[^"]*"[^>]*>(.*?)</section>', html, re.S)
+def visible_faq(page_html):
+    sec = re.search(r'<section class="(?:sec faq|mq-faq)[^"]*"[^>]*>(.*?)</section>', page_html, re.S)
     if not sec:
         return []
-    return [re.sub(r"<.*?>", "", q).strip() for q in re.findall(r"<summary>(.*?)</summary>", sec.group(1), re.S)]
+    return [html.unescape(re.sub(r"<.*?>", "", q)).strip() for q in re.findall(r"<summary>(.*?)</summary>", sec.group(1), re.S)]
 
 
-def ld_nodes(html, f):
+def ld_nodes(page_html, f):
     out = []
-    for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S):
+    for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>', page_html, re.S):
         try:
             data = json.loads(raw)
         except json.JSONDecodeError as e:
@@ -57,8 +58,8 @@ def ld_nodes(html, f):
     return out
 
 
-def check_links(f, html):
-    for href in set(re.findall(r'(?:href|src)="(/(?!/)[^"#?]*|\.\./[^"#?]*)"', html)):
+def check_links(f, page_html):
+    for href in set(re.findall(r'(?:href|src)="(/(?!/)[^"#?]*|\.\./[^"#?]*)"', page_html)):
         if href.startswith(".."):
             target = os.path.normpath(os.path.join(os.path.dirname(f), href))
         else:
@@ -68,6 +69,18 @@ def check_links(f, html):
         if target == "" or target.endswith("/"):
             target += "index.html"
         check(os.path.exists(target), f"{f}: link interno rotto {href}")
+    check_anchors(f, page_html)
+
+
+def check_anchors(f, page_html):
+    """Ogni link interno con #ancora deve puntare a un id esistente nella pagina di arrivo."""
+    for path, anchor in set(re.findall(r'href="(/(?!/)[^"#?]*)#([\w-]+)"', page_html)):
+        target = path.lstrip("/")
+        if target == "" or target.endswith("/"):
+            target += "index.html"
+        if os.path.exists(target):
+            page = open(target, encoding="utf-8").read()
+            check(f'id="{anchor}"' in page, f"{f}: ancora inesistente {path}#{anchor}")
 
 
 def check_page(f):

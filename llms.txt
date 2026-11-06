@@ -25,6 +25,10 @@ FAR.E Group (also written "FARE Group") is an independent Italian technology ope
 
 - [Home](https://www.fare-group.com/it/): cosa fa FAR.E Group, risultati, domande frequenti
 - [Servizi](https://www.fare-group.com/it/servizi.html): feedstock management, gestione operativa, progetti, Methan.IQ
+- [Gestione operativa e O&M](https://www.fare-group.com/it/gestione-operativa-om.html): conduzione e manutenzione di impianti di biogas e biometano per conto della proprietà, metodo, caso concreto, domande frequenti
+- [Feedstock management](https://www.fare-group.com/it/feedstock-management.html): biomasse e ricetta valutate sul costo per metro cubo di metano, numeri, domande frequenti
+- [Project management](https://www.fare-group.com/it/project-management.html): realizzazione e avvio degli impianti, consulenza tecnica sui contratti, domande frequenti
+- [Fondi e investitori](https://www.fare-group.com/it/fondi-investitori.html): numeri verificabili e metodo uniforme per portafogli di impianti
 - [Modello](https://www.fare-group.com/it/modello.html): metodo di lavoro e caso studio di gestione completa di un impianto biogas
 - [Methan.IQ](https://www.fare-group.com/it/methaniq.html): la piattaforma, funzioni, abbonamento, domande frequenti
 - [Chi siamo](https://www.fare-group.com/it/chi-siamo.html): società del gruppo, sedi, dati societari
@@ -34,6 +38,10 @@ FAR.E Group (also written "FARE Group") is an independent Italian technology ope
 
 - [Home](https://www.fare-group.com/en/)
 - [Services](https://www.fare-group.com/en/services.html)
+- [Operations and O&M](https://www.fare-group.com/en/operations-maintenance.html)
+- [Feedstock management](https://www.fare-group.com/en/feedstock-management.html)
+- [Project management](https://www.fare-group.com/en/project-management.html)
+- [Funds and investors](https://www.fare-group.com/en/investors.html)
 - [Model](https://www.fare-group.com/en/model.html)
 - [Methan.IQ](https://www.fare-group.com/en/methaniq.html)
 - [About](https://www.fare-group.com/en/about.html)
