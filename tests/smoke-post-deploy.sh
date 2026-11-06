@@ -109,5 +109,21 @@ sys.exit(0 if visible and visible == schema else 1)
 " && ok "$u FAQ nello schema = FAQ visibili" || ko "$u FAQ nello schema diverse da quelle visibili"
 done
 
+echo "== 13. SEO tecnico 2026-11: icone, charset, file interni non pubblici =="
+for p in favicon.ico assets/img/favicon-32.png assets/img/apple-touch-icon.png; do
+  c=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "$H/$p")
+  [ "$c" = "200" ] && ok "/$p -> 200" || ko "/$p -> $c (atteso 200)"
+done
+for p in tests/smoke-post-deploy.sh tests/seo-static-check.py docs/seo-geo/SEO_GEO_AUDIT.md; do
+  c=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "$H/$p")
+  [ "$c" = "404" ] && ok "/$p non pubblico (404)" || ko "/$p -> $c (atteso 404: file interno esposto)"
+done
+for u in "/it/" "/en/services.html" "/it/contatti.html"; do
+  # pagina intera in variabile: con pipefail, curl | head -c andrebbe in SIGPIPE sulle pagine grandi
+  page=$(curl -s --max-time 20 "$H$u")
+  [[ "${page:0:1024}" == *'<meta charset="UTF-8">'* ]] \
+    && ok "$u charset nei primi 1024 byte" || ko "$u charset assente dai primi 1024 byte"
+done
+
 [ $fail -eq 0 ] && echo "RISULTATO: tutti i check PASS" || echo "RISULTATO: almeno un FAIL"
 exit $fail
