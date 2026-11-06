@@ -876,8 +876,8 @@ a { color: inherit; }
   letter-spacing: .2px;
 }
 .b svg { width: 15px; height: 15px; }
-.b-g { background: var(--green); color: white; }
-.b-g:hover { background: var(--green-dark); }
+.b-g { background: #4A825C; color: white; } /* contrasto testo bianco 4,5:1 (WCAG AA); --green dava 3,2:1 */
+.b-g:hover { background: #3E6E4D; }
 .b-o { background: none; color: rgba(255,255,255,.8); border: 1px solid rgba(255,255,255,.18); }
 .b-o:hover { border-color: rgba(255,255,255,.8); color: white; }
 .b-w {
@@ -1291,7 +1291,7 @@ a { color: inherit; }
   text-transform: uppercase;
   margin-bottom: 16px;
 }
-.ft a { display: block; color: rgba(255,255,255,.75); text-decoration: none; font-size: 13px; padding: 3px 0; transition: color .2s; }
+.ft a { display: block; color: rgba(255,255,255,.75); text-decoration: none; font-size: 13px; padding: 4px 0; transition: color .2s; } /* area di tocco >= 24 px */
 .ft a:hover { color: var(--green); }
 .ft-bot {
   max-width: 1140px;
@@ -1805,7 +1805,7 @@ a { color: inherit; }
   align-items: center;
   gap: 8px;
   padding: 14px 32px;
-  background: var(--green);
+  background: #4A825C; /* contrasto 4,5:1 come .b-g */
   color: white;
   font-size: 14px;
   font-weight: 600;
@@ -1815,13 +1815,13 @@ a { color: inherit; }
   font-family: var(--sans);
   transition: all .25s;
 }
-.submit-btn:hover { background: var(--green-dark); }
+.submit-btn:hover { background: #3E6E4D; }
 .submit-btn svg { width: 16px; height: 16px; }
-.form-note { margin-top: 20px; font-size: 12px; color: var(--text-light); line-height: 1.6; }
+.form-note { margin-top: 20px; font-size: 12px; color: #69788C; line-height: 1.6; } /* 4,5:1 */
 .field-checkbox { margin-top: 4px; }
 .checkbox-inline { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; line-height: 1.5; color: var(--text); cursor: pointer; }
 .checkbox-inline input[type="checkbox"] { margin-top: 3px; flex-shrink: 0; cursor: pointer; }
-.checkbox-inline a { color: var(--green-dark); text-decoration: underline; }
+.checkbox-inline a { color: #4A825C; text-decoration: underline; } /* 4,5:1 */
 .hp-field { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
 .contact-form .submit-btn[disabled] { opacity: .55; cursor: not-allowed; }
 .form-status { margin-top: 16px; font-size: 13px; line-height: 1.5; min-height: 0; }
@@ -1851,7 +1851,7 @@ a { color: inherit; }
   flex-shrink: 0;
   color: var(--blue);
 }
-.info-item h4, .info-item h3 { font-family: var(--sans); font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--text-light); margin-bottom: 4px; }
+.info-item h4, .info-item h3 { font-family: var(--sans); font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #69788C; margin-bottom: 4px; }
 .info-item a { font-size: 14px; color: var(--blue); text-decoration: none; display: inline; padding: 0; }
 .info-item a:hover { color: var(--green); }
 .info-item p { font-size: 14px; color: var(--text-mid); line-height: 1.5; }

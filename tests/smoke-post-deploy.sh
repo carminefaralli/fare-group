@@ -125,5 +125,25 @@ for u in "/it/" "/en/services.html" "/it/contatti.html"; do
     && ok "$u charset nei primi 1024 byte" || ko "$u charset assente dai primi 1024 byte"
 done
 
+echo "== 14. Pagine servizio e fondi (AEO): online, in sitemap, FAQ nello schema = FAQ visibili =="
+sitemap=$(curl -s --max-time 20 "$H/sitemap.xml")
+for u in /it/gestione-operativa-om.html /en/operations-maintenance.html /it/feedstock-management.html /en/feedstock-management.html \
+         /it/project-management.html /en/project-management.html /it/fondi-investitori.html /en/investors.html \
+         /it/servizi.html /en/services.html; do
+  page=$(curl -s --max-time 20 -w '\n%{http_code}' "$H$u"); code=${page##*$'\n'}; page=${page%$'\n'*}
+  [ "$code" = "200" ] || { ko "$u -> $code (atteso 200)"; continue; }
+  case "$sitemap" in *"<loc>https://www.fare-group.com$u</loc>"*) ok "$u in sitemap";; *) ko "$u assente dalla sitemap";; esac
+  printf '%s' "$page" | python3 -c "
+import sys, re, json, html
+s = sys.stdin.read()
+clean = lambda x: html.unescape(re.sub(r'<[^>]+>', '', x)).strip()
+box = re.search(r'<section class=\"sec faq\".*?<div class=\"faq-list\">(.*?)</div>', s, re.S)
+visible = [clean(q) for q in re.findall(r'<summary>(.*?)</summary>', box.group(1))] if box else []
+nodes = [n for b in re.findall(r'<script type=\"application/ld\+json\">(.*?)</script>', s, re.S) for n in json.loads(b).get('@graph', [])]
+schema = [q['name'] for n in nodes if n.get('@type') == 'FAQPage' for q in n['mainEntity']]
+sys.exit(0 if visible and visible == schema else 1)
+" && ok "$u FAQ nello schema = FAQ visibili" || ko "$u FAQ nello schema diverse da quelle visibili"
+done
+
 [ $fail -eq 0 ] && echo "RISULTATO: tutti i check PASS" || echo "RISULTATO: almeno un FAIL"
 exit $fail
