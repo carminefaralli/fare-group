@@ -2,6 +2,16 @@
   "navigationFallback": null,
   "routes": [
     {
+      "route": "/docs/*",
+      "rewrite": "/404.html",
+      "statusCode": 404
+    },
+    {
+      "route": "/tests/*",
+      "rewrite": "/404.html",
+      "statusCode": 404
+    },
+    {
       "route": "/",
       "redirect": "/it/",
       "statusCode": 301
