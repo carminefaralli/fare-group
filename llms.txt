@@ -19,7 +19,9 @@ FAR.E Group (also written "FARE Group") is an independent Italian technology ope
 ## Methan.IQ
 
 - Piattaforma per la gestione operativa di impianti di biogas e biometano, sviluppata da FAR.E Services.
-- Funzioni: carico guidato con piano di carico, controllo di certificabilità delle biomasse, arrivi rispetto al previsto, giacenze con avviso di copertura a 7 giorni, performance dell'impianto, report giornaliero via email, report di sostenibilità, simulatore diagnostico (produzione teorica rispetto a misurata), ronde registrate con codice QR.
+- Funzioni: carico guidato con piano di carico, controllo di certificabilità delle biomasse, arrivi rispetto al previsto, giacenze con avviso di copertura a 7 giorni, performance dell'impianto, report giornaliero via email, report di sostenibilità, simulatore diagnostico (produzione teorica rispetto a misurata), analisi di laboratorio (sostanza secca, pH, FOS/TAC, TS%), ronda digitale con punti QR o NFC (misure, foto, note vocali), segnalazione anomalie, passaggio di consegne tra turni, manutenzione e magazzino.
+- Affianca lo SCADA, non lo sostituisce: gestisce i dati operativi che lo SCADA non raccoglie. Le attività di campo si svolgono dal telefono.
+- Intelligenza artificiale: funzioni in sviluppo, rilascio progressivo (validazione dei dati in linea, trascrizione di note vocali e documenti di trasporto, sintesi e avvisi sulle derive di processo, previsione di FOS/TAC e produzione, ottimizzazione della dieta, manutenzione predittiva, assistente per l'asset manager). L'intelligenza artificiale informa e propone; non interviene su sicurezza, ricetta, fermate d'impianto e SCADA.
 - Disponibile anche per impianti che gestiscono in autonomia la propria operatività, con abbonamento mensile per impianto. Prezzo su richiesta, demo disponibile.
 
 ## Pagine
@@ -31,7 +33,7 @@ FAR.E Group (also written "FARE Group") is an independent Italian technology ope
 - [Project management](https://www.fare-group.com/it/project-management.html): realizzazione e avvio degli impianti, consulenza tecnica sui contratti, domande frequenti
 - [Fondi e investitori](https://www.fare-group.com/it/fondi-investitori.html): numeri verificabili e metodo uniforme per portafogli di impianti
 - [Modello](https://www.fare-group.com/it/modello.html): metodo di lavoro e caso studio di gestione completa di un impianto biogas
-- [Methan.IQ](https://www.fare-group.com/it/methaniq.html): la piattaforma, funzioni, abbonamento, domande frequenti
+- [Methan.IQ](https://www.fare-group.com/it/methaniq.html): la piattaforma, funzioni, intelligenza artificiale in sviluppo, abbonamento, domande frequenti
 - [Chi siamo](https://www.fare-group.com/it/chi-siamo.html): società del gruppo, sedi, dati societari
 - [Contatti](https://www.fare-group.com/it/contatti.html)
 
