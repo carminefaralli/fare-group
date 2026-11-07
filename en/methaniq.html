@@ -19,10 +19,10 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
   gtag('js', new Date());
   gtag('config', 'G-6G17HPDNFM');
 </script>
-<title>Methan.IQ — Platform for biogas and biomethane plants</title>
-<meta name="description" content="Methan.IQ is the platform for running biogas and biomethane plants: loads, deliveries and rounds from a phone, a daily report for the owners.">
-<meta property="og:title" content="Methan.IQ — Platform for biogas and biomethane plants">
-<meta property="og:description" content="Methan.IQ is the platform for running biogas and biomethane plants: loads, deliveries and rounds from a phone, a daily report for the owners.">
+<title>Methan.IQ — Biogas and biomethane plant management software</title>
+<meta name="description" content="Methan.IQ is biogas plant management software: feedstock deliveries, loading plan, lab analyses, rounds, anomalies and maintenance, all from a phone.">
+<meta property="og:title" content="Methan.IQ — Biogas and biomethane plant management software">
+<meta property="og:description" content="Methan.IQ is biogas plant management software: feedstock deliveries, loading plan, lab analyses, rounds, anomalies and maintenance, all from a phone.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.fare-group.com/en/methaniq.html">
 <meta property="og:locale" content="en_GB">
@@ -90,7 +90,7 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
           "name": "What is Methan.IQ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Methan.IQ is a platform for the day-to-day operation of biogas and biomethane plants. Operators record loads, deliveries, checks and rounds from a phone; the owners receive a daily report with production, loaded against prescribed and deliveries against forecast."
+            "text": "Methan.IQ is a platform for the day-to-day operation of biogas and biomethane plants. Operators record feedstock deliveries, loads, lab analyses, rounds, anomalies and maintenance work from a phone; the owners receive a daily report with production, loaded against prescribed and deliveries against forecast."
           }
         },
         {
@@ -116,6 +116,30 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
             "@type": "Answer",
             "text": "Methan.IQ is offered as a monthly subscription per plant, in two service levels. The price depends on the plant and is presented during the demo."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Methan.IQ replace the SCADA system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It works alongside it and handles the operating data the SCADA system does not collect: feedstock deliveries, rounds, lab analyses, anomalies and maintenance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the AI features already available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They are in development and will be released step by step. Predictive features are switched on only after a phase of collecting and cleaning the plant's data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Methan.IQ work on a smartphone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Field tasks such as deliveries, loads, rounds and anomaly reports are designed for the phone."
+          }
         }
       ]
     },
@@ -128,7 +152,7 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
       "operatingSystem": "Web",
       "image": "https://www.fare-group.com/assets/img/og-cover.jpg",
       "inLanguage": "en",
-      "description": "Platform for the day-to-day operation of biogas and biomethane plants: guided loading against a plan, feedstock certifiability check, deliveries against forecast, stock levels with a 7-day coverage alert, plant performance, daily email report, sustainability report and a diagnostic simulator comparing theoretical and measured production.",
+      "description": "Platform for the day-to-day operation of biogas and biomethane plants: guided loading against a plan, feedstock certifiability check, deliveries against forecast, stock levels with a 7-day coverage alert, plant performance, daily email report, sustainability report, a diagnostic simulator comparing theoretical and measured production, lab analyses (dry matter, pH, FOS/TAC, TS%), digital rounds with QR or NFC tags, anomaly reporting, shift handover, maintenance and stores.",
       "featureList": [
         "Guided loading against a loading plan",
         "Feedstock certifiability check",
@@ -138,7 +162,11 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
         "Daily email report",
         "Sustainability report",
         "Diagnostic simulator: theoretical and measured production",
-        "Plant rounds recorded with QR codes"
+        "Lab analyses: dry matter, pH, FOS/TAC, TS%",
+        "Digital rounds with QR or NFC points, measurements, photos and voice notes",
+        "Anomaly reporting with photos, area and severity",
+        "Shift handover",
+        "Maintenance, spare parts and stores"
       ],
       "author": {
         "@id": "https://www.fare-group.com/#fare-services"
@@ -275,9 +303,29 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
         <p>Feeding and deliveries for the period in two Excel files, with a filter for approved feedstock only.</p>
       </div>
       <div class="mq-tile reveal">
+        <div class="mq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3h6"/><path d="M10 3v6L4.5 19a1.5 1.5 0 0 0 1.3 2h12.4a1.5 1.5 0 0 0 1.3-2L14 9V3"/><path d="M7 15h10"/></svg></div>
+        <h3>Lab analyses</h3>
+        <p>Dry matter, pH, FOS/TAC and TS% in a single archive, linked to loads and periods.</p>
+      </div>
+      <div class="mq-tile wide reveal">
         <div class="mq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM18 18h3v3h-3z"/></svg></div>
-        <h3>QR rounds</h3>
-        <p>Plant rounds are recorded by scanning a QR code, straight from a phone.</p>
+        <h3>Digital rounds</h3>
+        <p>The round follows points identified by QR or NFC tags: measurements, photos and voice notes are recorded on the spot.</p>
+      </div>
+      <div class="mq-tile wide reveal">
+        <div class="mq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4M12 17h.01"/></svg></div>
+        <h3>Anomaly reporting</h3>
+        <p>Every anomaly is recorded with photos, area and severity, and followed up until it is closed.</p>
+      </div>
+      <div class="mq-tile wide reveal">
+        <div class="mq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg></div>
+        <h3>Shift handover</h3>
+        <p>End-of-day report and a structured handover from one shift to the next.</p>
+      </div>
+      <div class="mq-tile wide reveal">
+        <div class="mq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4 2.6-2.6Z"/></svg></div>
+        <h3>Maintenance and stores</h3>
+        <p>Work orders, spare parts and consumables managed in the same system as the operating data.</p>
       </div>
     </div>
   </div>
@@ -299,7 +347,7 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
           <li>Defined procedures, step by step</li>
           <li>Everything from a phone, no paper forms</li>
           <li>Loads, deliveries and checks recorded on the spot</li>
-          <li>Rounds recorded by scanning a QR code</li>
+          <li>Rounds with QR or NFC tags, with measurements, photos and voice notes</li>
         </ul>
       </div>
       <div class="mq-role dark reveal">
@@ -328,8 +376,43 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
       <div class="mq-step reveal"><div class="when">Morning</div><h3>The report arrives</h3><p>The owners read by email how the previous day went.</p></div>
       <div class="mq-step reveal"><div class="when">Deliveries</div><h3>Checked on arrival</h3><p>Every incoming feedstock is checked against the plan.</p></div>
       <div class="mq-step reveal"><div class="when">Loading</div><h3>Recipe followed</h3><p>The operator records from a phone how much has been loaded.</p></div>
-      <div class="mq-step reveal"><div class="when">Round</div><h3>Checks on record</h3><p>The plant round is recorded with the QR code.</p></div>
+      <div class="mq-step reveal"><div class="when">Round</div><h3>Checks on record</h3><p>The plant round is recorded with QR or NFC tags.</p></div>
       <div class="mq-step reveal"><div class="when">Evening</div><h3>Day closed</h3><p>The figures are consolidated and become tomorrow's report.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTIFICIAL INTELLIGENCE -->
+<section class="mq-roles" id="artificial-intelligence">
+  <div class="mq-wrap">
+    <div class="reveal">
+      <div class="mq-eyebrow">Artificial intelligence, in development</div>
+      <h2>How Methan.IQ uses artificial intelligence.</h2>
+      <p class="mq-lead">We are developing AI features that work on the data collected by the platform. They will be released step by step.</p>
+    </div>
+    <div class="mq-roles-grid">
+      <div class="mq-role reveal">
+        <div class="tag">In development</div>
+        <h3>What it will do</h3>
+        <ul>
+          <li>Inline data validation: values out of range or inconsistent with history flagged while the operator enters them</li>
+          <li>Transcription: voice notes and photos of transport documents become filled-in fields</li>
+          <li>Summaries and alerts: an automatic daily report and warnings on slow drifts in process parameters, not only on thresholds crossed</li>
+          <li>Process forecasting: FOS/TAC and production trends for the coming days, based on feed and analyses</li>
+          <li>Feed optimisation: cost, quality and yield of feedstocks compared on data measured at the plant</li>
+          <li>Predictive maintenance and stock: work orders and reorders proposed from running hours, anomalies and consumption</li>
+          <li>Assistant for the asset manager: plain-language questions on plant data, with answers based on the recorded data</li>
+        </ul>
+      </div>
+      <div class="mq-role dark reveal">
+        <div class="tag">What it does not do</div>
+        <h3>Decisions stay with people</h3>
+        <ul>
+          <li>AI informs and proposes; it does not decide</li>
+          <li>It does not act on safety, feeding recipe, plant shutdowns or control systems (SCADA)</li>
+          <li>Predictive features are switched on only after a phase of collecting and cleaning the plant's data</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -364,10 +447,13 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":86666832},"en":{"cookiePolicy
     <div class="mq-eyebrow">Frequently asked questions</div>
     <h2>Methan.IQ at a glance</h2>
     <div class="faq-list">
-      <details><summary>What is Methan.IQ?</summary><p>Methan.IQ is a platform for the day-to-day operation of biogas and biomethane plants. Operators record loads, deliveries, checks and rounds from a phone; the owners receive a daily report with production, loaded against prescribed and deliveries against forecast.</p></details>
+      <details><summary>What is Methan.IQ?</summary><p>Methan.IQ is a platform for the day-to-day operation of biogas and biomethane plants. Operators record feedstock deliveries, loads, lab analyses, rounds, anomalies and maintenance work from a phone; the owners receive a daily report with production, loaded against prescribed and deliveries against forecast.</p></details>
       <details><summary>Who develops Methan.IQ?</summary><p>Methan.IQ is developed by FAR.E Services, a FAR.E Group company. It grew out of the work on a biogas plant run by FAR.E with its own operators on site.</p></details>
       <details><summary>Do I have to hand my plant over to FAR.E Group to use it?</summary><p>No. Methan.IQ is also available to plants that run their own operations.</p></details>
       <details><summary>How much does Methan.IQ cost?</summary><p>Methan.IQ is offered as a monthly subscription per plant, in two service levels. The price depends on the plant and is presented during the demo.</p></details>
+      <details><summary>Does Methan.IQ replace the SCADA system?</summary><p>No. It works alongside it and handles the operating data the SCADA system does not collect: feedstock deliveries, rounds, lab analyses, anomalies and maintenance.</p></details>
+      <details><summary>Are the AI features already available?</summary><p>They are in development and will be released step by step. Predictive features are switched on only after a phase of collecting and cleaning the plant's data.</p></details>
+      <details><summary>Does Methan.IQ work on a smartphone?</summary><p>Yes. Field tasks such as deliveries, loads, rounds and anomaly reports are designed for the phone.</p></details>
     </div>
   </div>
 </section>
