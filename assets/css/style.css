@@ -1203,6 +1203,7 @@ a { color: inherit; }
 .proof-header .h2 { margin-bottom: 16px; }
 .proof-header .ld { margin-top: 0; }
 .proof-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-bottom: 48px; }
+.proof-grid.proof-grid-single { grid-template-columns: minmax(0, 420px); }
 .proof-video { border-radius: 4px; overflow: hidden; background: var(--navy); transition: transform .3s; }
 .proof-video:hover { transform: translateY(-4px); }
 .proof-thumb { position: relative; padding-top: 56.25%; background: #111; overflow: hidden; }
