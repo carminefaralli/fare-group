@@ -1,0 +1,49 @@
+# Workflow per il repository del sito fare-group.com (ADR-0076 D4). Si copia in `.github/workflows/` del repository del sito,
+# insieme a `scripts/controllo-cartella-udc.mjs` (da `docs/sito/` del repository fare-comunicazione).
+#
+# Fallisce se un commit della GitHub App dell'UDC tocca file fuori dalle due cartelle dedicate (it/approfondimenti e en/insights), modifica un articolo
+# esistente o rinomina/copia file. E' la seconda difesa: il connettore dell'UDC rispetta le stesse regole nel codice.
+#
+# Prima di usarlo: impostare la variabile di repository `UDC_APP_SLUG` (Settings > Secrets and variables > Actions >
+# Variables) con il nome (slug) della GitHub App. Non e' un segreto. Nessun segreto serve a questo workflow.
+
+name: controllo-cartella-udc
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  controllo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Intervallo di commit da controllare
+        id: intervallo
+        env:
+          EVENTO: ${{ github.event_name }}
+          BASE_PR: ${{ github.event.pull_request.base.sha }}
+          HEAD_PR: ${{ github.event.pull_request.head.sha }}
+          PRIMA_PUSH: ${{ github.event.before }}
+          DOPO_PUSH: ${{ github.sha }}
+        run: |
+          if [ "$EVENTO" = "pull_request" ]; then
+            echo "base=$BASE_PR" >> "$GITHUB_OUTPUT"
+            echo "head=$HEAD_PR" >> "$GITHUB_OUTPUT"
+          else
+            echo "base=$PRIMA_PUSH" >> "$GITHUB_OUTPUT"
+            echo "head=$DOPO_PUSH" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Controllo della cartella dell'UDC
+        env:
+          UDC_APP_SLUG: ${{ vars.UDC_APP_SLUG }}
+          UDC_CARTELLE: it/approfondimenti,en/insights
+          BASE: ${{ steps.intervallo.outputs.base }}
+          HEAD: ${{ steps.intervallo.outputs.head }}
+        run: node scripts/controllo-cartella-udc.mjs
