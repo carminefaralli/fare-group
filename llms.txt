@@ -35,6 +35,7 @@ FAR.E Group (also written "FARE Group") is an independent Italian technology ope
 - [Modello](https://www.fare-group.com/it/modello.html): metodo di lavoro e caso studio di gestione completa di un impianto biogas
 - [Methan.IQ](https://www.fare-group.com/it/methaniq.html): la piattaforma, funzioni, intelligenza artificiale in sviluppo, abbonamento, domande frequenti
 - [Chi siamo](https://www.fare-group.com/it/chi-siamo.html): società del gruppo, sedi, dati societari
+- [Approfondimenti](https://www.fare-group.com/it/approfondimenti/): articoli di FAR.E Group su biogas, biometano e gestione degli impianti
 - [Contatti](https://www.fare-group.com/it/contatti.html)
 
 ## English
@@ -48,6 +49,7 @@ FAR.E Group (also written "FARE Group") is an independent Italian technology ope
 - [Model](https://www.fare-group.com/en/model.html)
 - [Methan.IQ](https://www.fare-group.com/en/methaniq.html)
 - [About](https://www.fare-group.com/en/about.html)
+- [Insights](https://www.fare-group.com/en/insights/): FAR.E Group articles on biogas, biomethane and plant management
 - [Contact](https://www.fare-group.com/en/contact.html)
 
 ## Contatti

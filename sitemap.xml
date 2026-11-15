@@ -34,6 +34,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/about.html"/>
   </url>
 
+  <!-- Approfondimenti / Insights -->
+  <url>
+    <loc>https://www.fare-group.com/it/approfondimenti/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/approfondimenti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/insights/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/insights/"/>
+  </url>
+  <url>
+    <loc>https://www.fare-group.com/en/insights/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.fare-group.com/it/approfondimenti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fare-group.com/en/insights/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fare-group.com/en/insights/"/>
+  </url>
+
   <!-- Contatti / Contact -->
   <url>
     <loc>https://www.fare-group.com/it/contatti.html</loc>

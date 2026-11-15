@@ -1,0 +1,54 @@
+# Workflow per il repository del sito: controlla che i commit della GitHub App dei contenuti editoriali restino dentro le due
+# cartelle riservate (it/approfondimenti e en/insights). Va insieme a `scripts/controllo-cartella-udc.mjs`.
+#
+# Fallisce se un commit dell'App (come autore o come committer) tocca file fuori dalle cartelle riservate, file che non sono
+# .html, symlink o eseguibili, modifica un articolo esistente o rinomina/copia file. E' una seconda difesa, indipendente dai
+# controlli dell'App stessa.
+#
+# Prima di usarlo: impostare la variabile di repository `UDC_APP_SLUG` (Settings > Secrets and variables > Actions >
+# Variables) con il nome (slug) della GitHub App. Non e' un segreto. Nessun segreto serve a questo workflow.
+
+name: controllo-cartella-udc
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  controllo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Intervallo di commit da controllare
+        id: intervallo
+        env:
+          EVENTO: ${{ github.event_name }}
+          BASE_PR: ${{ github.event.pull_request.base.sha }}
+          HEAD_PR: ${{ github.event.pull_request.head.sha }}
+          PRIMA_PUSH: ${{ github.event.before }}
+          DOPO_PUSH: ${{ github.sha }}
+        run: |
+          if [ "$EVENTO" = "pull_request" ]; then
+            echo "base=$BASE_PR" >> "$GITHUB_OUTPUT"
+            echo "head=$HEAD_PR" >> "$GITHUB_OUTPUT"
+          else
+            echo "base=$PRIMA_PUSH" >> "$GITHUB_OUTPUT"
+            echo "head=$DOPO_PUSH" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Test del controllo
+        run: node --test tests/controllo-cartella-udc.test.mjs
+      - name: Controllo delle cartelle riservate
+        env:
+          UDC_APP_SLUG: ${{ vars.UDC_APP_SLUG }}
+          UDC_CARTELLE: it/approfondimenti,en/insights
+          BASE: ${{ steps.intervallo.outputs.base }}
+          HEAD: ${{ steps.intervallo.outputs.head }}
+        run: node scripts/controllo-cartella-udc.mjs
