@@ -1,8 +1,9 @@
-# Workflow per il repository del sito fare-group.com (ADR-0076 D4). Si copia in `.github/workflows/` del repository del sito,
-# insieme a `scripts/controllo-cartella-udc.mjs` (da `docs/sito/` del repository fare-comunicazione).
+# Workflow per il repository del sito: controlla che i commit della GitHub App dei contenuti editoriali restino dentro le due
+# cartelle riservate (it/approfondimenti e en/insights). Va insieme a `scripts/controllo-cartella-udc.mjs`.
 #
-# Fallisce se un commit della GitHub App dell'UDC tocca file fuori dalle due cartelle dedicate (it/approfondimenti e en/insights), modifica un articolo
-# esistente o rinomina/copia file. E' la seconda difesa: il connettore dell'UDC rispetta le stesse regole nel codice.
+# Fallisce se un commit dell'App (come autore o come committer) tocca file fuori dalle cartelle riservate, file che non sono
+# .html, symlink o eseguibili, modifica un articolo esistente o rinomina/copia file. E' una seconda difesa, indipendente dai
+# controlli dell'App stessa.
 #
 # Prima di usarlo: impostare la variabile di repository `UDC_APP_SLUG` (Settings > Secrets and variables > Actions >
 # Variables) con il nome (slug) della GitHub App. Non e' un segreto. Nessun segreto serve a questo workflow.
@@ -20,10 +21,12 @@ permissions:
 jobs:
   controllo:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: false
       - name: Intervallo di commit da controllare
         id: intervallo
         env:
@@ -40,7 +43,9 @@ jobs:
             echo "base=$PRIMA_PUSH" >> "$GITHUB_OUTPUT"
             echo "head=$DOPO_PUSH" >> "$GITHUB_OUTPUT"
           fi
-      - name: Controllo della cartella dell'UDC
+      - name: Test del controllo
+        run: node --test tests/controllo-cartella-udc.test.mjs
+      - name: Controllo delle cartelle riservate
         env:
           UDC_APP_SLUG: ${{ vars.UDC_APP_SLUG }}
           UDC_CARTELLE: it/approfondimenti,en/insights
