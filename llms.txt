@@ -1,17 +1,15 @@
 # FAR.E Group
 
-> FAR.E Group è un gruppo italiano che affianca proprietari, fondi e sviluppatori nella gestione di impianti di biogas e biometano: feedstock management (biomasse e ricetta del digestore), gestione operativa e manutenzione (O&M) degli impianti per conto della proprietà, project management e consulenza tecnica e contrattuale, e la piattaforma Methan.IQ. È un operatore tecnologico indipendente: non possiede impianti e non vende tecnologia. Opera in tutta Italia con un network regionale. Operativo dal 2023. Sede legale a Isernia, uffici a Firenze.
+> FAR.E Group è un gruppo italiano che affianca proprietari, fondi e sviluppatori nella gestione di impianti di biogas e biometano: feedstock management (biomasse e ricetta del digestore), gestione operativa e manutenzione (O&M) degli impianti per conto della proprietà, project management e consulenza tecnica e contrattuale, e la piattaforma Methan.IQ. È un operatore tecnologico indipendente: non possiede impianti. Non vende ore di consulenza: vende processi industriali. Methan.IQ è la piattaforma che porta il nostro metodo in digitale, disponibile in abbonamento. Opera in tutta Italia con un network regionale. Operativo dal 2023. Sede legale a Isernia, uffici a Firenze.
 
-FAR.E Group (also written "FARE Group") is an independent Italian technology operator that supports owners, funds and developers in running biogas and biomethane plants. Services: feedstock management (biomass procurement and digester recipe), plant operation and maintenance (O&M) on behalf of the owners, project management and technical and contract advisory, and the Methan.IQ platform. It does not own plants and does not sell technology. It works across Italy with a regional network. Operational since 2023. Registered office in Isernia, offices in Florence.
+FAR.E Group (also written "FARE Group") is an independent Italian technology operator that supports owners, funds and developers in running biogas and biomethane plants. Services: feedstock management (biomass procurement and digester recipe), plant operation and maintenance (O&M) on behalf of the owners, project management and technical and contract advisory, and the Methan.IQ platform. It does not own plants. It does not sell consulting hours: it sells industrial processes. Methan.IQ is the platform that brings our method to digital, available by subscription. It works across Italy with a regional network. Operational since 2023. Registered office in Isernia, offices in Florence.
 
 ## Fatti chiave
 
 - Società: FAR.E Group riunisce FAR.E Energy (gestione operativa e manutenzione di impianti per conto della proprietà; non possiede impianti propri) e FAR.E Services (consulenza tecnica e contrattuale, feedstock management, project management, sviluppo di Methan.IQ).
-- 20 progetti e impianti su cui il team ha lavorato.
-- 9 impianti seguiti oggi in feedstock management: 6 operativi, 3 in sviluppo.
-- 1 impianto biogas gestito interamente, dal piazzale alla manutenzione, con operatori FAR.E in campo.
+- 9 impianti che seguiamo con il servizio di feedstock management: 6 operativi, 3 in sviluppo.
 - 1.000 Sm³/h: l'impianto più grande seguito in project management.
-- Analizzando ricetta e approvvigionamento, FAR.E Group individua tra 150.000 e 500.000 € l'anno di minor costo delle biomasse per impianto.
+- Analizzando ricetta e approvvigionamento, FAR.E Group individua dove ridurre il costo delle biomasse.
 - Metodo: costo per metro cubo di metano come indicatore principale, procedure scritte, responsabilità assegnate, metodo lean. Nucleo tecnico proveniente da Oil & Gas e grandi gruppi industriali.
 - Lavora sempre insieme alla proprietà e al team dell'impianto.
 - FAR.E. Group S.r.l. è socio sostenitore del Consorzio Italiano Biogas (CIB): https://consorziobiogas.it/soci/soci-sostenitori/far-e-group-srl/
@@ -22,7 +20,7 @@ FAR.E Group (also written "FARE Group") is an independent Italian technology ope
 - Funzioni: carico guidato con piano di carico, controllo di certificabilità delle biomasse, arrivi rispetto al previsto, giacenze con avviso di copertura a 7 giorni, performance dell'impianto, report giornaliero via email, report di sostenibilità, simulatore diagnostico (produzione teorica rispetto a misurata), analisi di laboratorio (sostanza secca, pH, FOS/TAC, TS%), ronda digitale con punti QR o NFC (misure, foto, note vocali), segnalazione anomalie, passaggio di consegne tra turni, manutenzione e magazzino.
 - Affianca lo SCADA, non lo sostituisce: gestisce i dati operativi che lo SCADA non raccoglie. Le attività di campo si svolgono dal telefono.
 - Intelligenza artificiale: funzioni in sviluppo, rilascio progressivo (validazione dei dati in linea, trascrizione di note vocali e documenti di trasporto, sintesi e avvisi sulle derive di processo, previsione di FOS/TAC e produzione, ottimizzazione della dieta, manutenzione predittiva, assistente per l'asset manager). L'intelligenza artificiale informa e propone; non interviene su sicurezza, ricetta, fermate d'impianto e SCADA.
-- Disponibile anche per impianti che gestiscono in autonomia la propria operatività, con abbonamento mensile per impianto. Prezzo su richiesta, demo disponibile.
+- Disponibile per impianti che gestiscono in autonomia la propria operatività, con abbonamento mensile per impianto. Prezzo su richiesta, demo disponibile.
 
 ## Pagine
 
