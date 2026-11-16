@@ -10,7 +10,15 @@ on:
       - main
 
 jobs:
+  # Decisione del CEO del 16/11/2026: il controllo delle cartelle riservate ai contenuti dell'UDC deve passare PRIMA della
+  # pubblicazione, non in parallelo. Se fallisce, il sito non viene pubblicato (vale anche per i commit dell'App, che
+  # possono scrivere direttamente su main).
+  controllo_cartelle:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    uses: ./.github/workflows/controllo-cartella-udc.yml
+
   build_and_deploy_job:
+    needs: controllo_cartelle
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
     name: Build and Deploy Job
